@@ -4,6 +4,9 @@ AI 已经写好了几千字长文，怎样把它整理成可以直接听的节�
 
 [直接打开中文工具箱](https://godgod126.github.io/listening-script-kit/?lang=zh) · [English live toolkit](https://godgod126.github.io/listening-script-kit/)
 
+[下载 v1.0.0 完整 ZIP](https://github.com/GODGOD126/listening-script-kit/releases/download/v1.0.0/listening-script-kit-v1.0.0.zip) · [版本说明](https://github.com/GODGOD126/listening-script-kit/releases/tag/v1.0.0)
+先把整个文件夹解压，再打开 `index.html`；直接在压缩包里打开可能缺少脚本。文件包只含这个公开工具箱，不含 App 工程或语音模型。手机上可以直接使用上方在线入口。
+
 下载整个项目，直接打开 `index.html`，选择中文即可使用。**不用注册、不需要密钥、不上传文稿、不调用 AI、不生成语音，也不保存输入。** 所有处理在当前浏览器内完成，无需安装依赖或启动服务器。
 
 1. 选择节目类型和主题，补上可核查的资料，生成提示词。再把提示词复制到你自己选择的 AI 工具。这里不会替你联系或上传到那个工具。
