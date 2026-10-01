@@ -1,0 +1,67 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>朗读稿与来源分离：可运行导出示例 — 「自听」MyListen</title><link rel="canonical" href="https://mylisten.vibestation.cn/samples/script-export-example.html"><meta name="description" content="一个不调用AI的完整前端示例：让朗读稿与来源分离，复制和TXT使用同一份文字，并提供手动复制备用入口。">
+<style>body{max-width:740px;margin:40px auto;padding:0 20px;font:18px/1.8 system-ui;background:#fbf8f3;color:#302c28}button{font:inherit;padding:12px 20px;margin:8px 8px 8px 0;cursor:pointer}textarea{box-sizing:border-box;width:100%;min-height:180px;font:inherit;padding:14px}article,aside{padding:20px;background:white;border:1px solid #ded5ca;border-radius:16px;margin:24px 0}a{overflow-wrap:anywhere;color:#704321}</style>
+<nav aria-label="语言"><a href="https://mylisten.vibestation.cn/samples/script-export-example-en.html" lang="en">English</a></nav><h1>一份正文，两种导出方式</h1><p><a href="https://mylisten.vibestation.cn/samples/script-export-example-source.txt" download="script-export-example.html">下载完整HTML源码</a></p><p>这是固定内容的前端示例，不调用AI、不生成语音、不上传或保存输入。文稿是节选演示，完整旅行者号案例另有来源核查。</p>
+<article aria-label="示范朗读稿"><h2 id="script-title"></h2><div id="paragraphs"></div></article>
+<button id="copy" type="button">复制纯文字稿</button><button id="download" type="button">下载同一份TXT</button><button id="manual" type="button">手动复制备用入口</button>
+<p id="status" role="status" aria-live="polite"></p><div id="fallback" hidden><label for="text">请选中并复制下方完整文字</label><textarea id="text" readonly></textarea></div>
+<aside><h2>来源留在朗读稿之外</h2><p>核查日期：2026-10-02。这里保存资料来源与使用范围，复制和TXT不包含本栏。</p><ul id="sources"></ul></aside>
+<p>示例由「自听」MyListen开发者Ryan Zhu提供，AI辅助编写并验证。<a href="https://mylisten.vibestation.cn/guides/voyager-listening-case/">完整案例与TXT</a> · <a href="https://mylisten.vibestation.cn/">自听与实际试听</a></p>
+<script>
+"use strict";
+const episode = {
+  title: "旅行者号穿过的边界（节选演示）",
+  paragraphs: [
+    "太阳不断向外送出带电粒子，形成太阳风。太阳风和星际环境相互作用，在太阳周围形成一个巨大的区域，叫作日球层。",
+    "日球层的外边界叫作日球层顶。旅行者一号在二〇一二年、二号在二〇一八年进入星际空间。这个边界，和广义太阳系的引力范围并不是一回事。"
+  ],
+  sources: [{label: "NASA Voyager任务主页", url: "https://science.nasa.gov/mission/voyager/", use: "2012和2018年星际空间里程碑"}]
+};
+// All output uses this one serializer. Sources never enter the narration.
+function narrationText(data) {
+  return [data.title, ...data.paragraphs]
+    .map(text => text.replace(/\r\n?/g, "\n").trim())
+    .join("\n\n") + "\n";
+}
+const text = narrationText(episode);
+document.querySelector("#script-title").textContent = episode.title;
+for (const content of episode.paragraphs) {
+  const paragraph = document.createElement("p");
+  paragraph.textContent = content;
+  document.querySelector("#paragraphs").append(paragraph);
+}
+for (const source of episode.sources) {
+  const item = document.createElement("li");
+  const link = document.createElement("a");
+  link.textContent = source.label;
+  link.href = source.url;
+  item.append(link, document.createTextNode("：" + source.use));
+  document.querySelector("#sources").append(item);
+}
+function manualCopy() {
+  document.querySelector("#fallback").hidden = false;
+  const field = document.querySelector("#text");
+  field.value = text;
+  field.focus();
+  field.select();
+  document.querySelector("#status").textContent = "请手动复制已选中的文字，或下载TXT。";
+}
+document.querySelector("#copy").addEventListener("click", async () => {
+  try {
+    await navigator.clipboard.writeText(text);
+    document.querySelector("#status").textContent = "纯文字稿已复制；来源保留在网页。";
+  } catch {
+    manualCopy();
+  }
+});
+document.querySelector("#manual").addEventListener("click", manualCopy);
+document.querySelector("#download").addEventListener("click", () => {
+  const url = URL.createObjectURL(new Blob([text], {type: "text/plain;charset=utf-8"}));
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "listening-script-example.txt";
+  document.body.append(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+});
+</script></html>

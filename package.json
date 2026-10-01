@@ -1,0 +1,10 @@
+{
+  "name": "listening-script-kit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local-only tools for preparing long-form listening scripts. No AI or TTS service.",
+  "scripts": {
+    "test": "node tests/core.test.cjs"
+  },
+  "license": "MIT"
+}

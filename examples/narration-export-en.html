@@ -1,0 +1,67 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Separate narration and source notes: runnable export example — 「自听」MyListen</title><link rel="canonical" href="https://mylisten.vibestation.cn/samples/script-export-example-en.html"><meta name="description" content="A complete browser-only example: separate narration and sources, share one string between copy and TXT, and provide a manual fallback.">
+<style>body{max-width:740px;margin:40px auto;padding:0 20px;font:18px/1.8 system-ui;background:#fbf8f3;color:#302c28}button{font:inherit;padding:12px 20px;margin:8px 8px 8px 0;cursor:pointer}textarea{box-sizing:border-box;width:100%;min-height:180px;font:inherit;padding:14px}article,aside{padding:20px;background:white;border:1px solid #ded5ca;border-radius:16px;margin:24px 0}a{overflow-wrap:anywhere;color:#704321}</style>
+<nav aria-label="Language"><a href="https://mylisten.vibestation.cn/samples/script-export-example.html" lang="zh-CN">中文</a> · <a href="https://mylisten.vibestation.cn/guides/narration-export/en/">Read the technical explanation</a></nav><h1>One script, two export paths</h1><p><a href="https://mylisten.vibestation.cn/samples/script-export-example-en-source.txt" download="script-export-example-en.html">Download the complete HTML source</a></p><p>This fixed-data example does not call AI, synthesize voice, or upload or store input. The short passage is an excerpt; the complete Voyager case has separate source checks.</p>
+<article aria-label="Example narration"><h2 id="script-title"></h2><div id="paragraphs"></div></article>
+<button id="copy" type="button">Copy narration only</button><button id="download" type="button">Download the same TXT</button><button id="manual" type="button">Manual copy fallback</button>
+<p id="status" role="status" aria-live="polite"></p><div id="fallback" hidden><label for="text">Select and copy the complete text below</label><textarea id="text" readonly></textarea></div>
+<aside><h2>Sources stay outside the narration</h2><p>Checked October 2, 2026. Source notes and their scope stay here; copy and TXT do not include this section.</p><ul id="sources"></ul></aside>
+<p>Provided by Ryan Zhu, developer of 「自听」MyListen. Prepared with AI assistance and checked in a browser.<a href="https://mylisten.vibestation.cn/guides/voyager-listening-case/en/">Complete case and TXT</a> · <a href="https://mylisten.vibestation.cn/en/">MyListen and actual voice sample</a></p>
+<script>
+"use strict";
+const episode = {
+  title: "The boundary Voyager crossed (short demonstration)",
+  paragraphs: [
+    "The Sun sends charged particles outward, forming the solar wind. Its interaction with the interstellar environment creates a vast region around the Sun called the heliosphere.",
+    "The outer boundary is the heliopause. Voyager 1 entered interstellar space in 2012, and Voyager 2 in 2018. This boundary is not the same as the full gravitational extent of the solar system."
+  ],
+  sources: [{label: "NASA Voyager mission page", url: "https://science.nasa.gov/mission/voyager/", use: "2012 and 2018 interstellar-space milestones"}]
+};
+// All output uses this one serializer. Sources never enter the narration.
+function narrationText(data) {
+  return [data.title, ...data.paragraphs]
+    .map(text => text.replace(/\r\n?/g, "\n").trim())
+    .join("\n\n") + "\n";
+}
+const text = narrationText(episode);
+document.querySelector("#script-title").textContent = episode.title;
+for (const content of episode.paragraphs) {
+  const paragraph = document.createElement("p");
+  paragraph.textContent = content;
+  document.querySelector("#paragraphs").append(paragraph);
+}
+for (const source of episode.sources) {
+  const item = document.createElement("li");
+  const link = document.createElement("a");
+  link.textContent = source.label;
+  link.href = source.url;
+  item.append(link, document.createTextNode("：" + source.use));
+  document.querySelector("#sources").append(item);
+}
+function manualCopy() {
+  document.querySelector("#fallback").hidden = false;
+  const field = document.querySelector("#text");
+  field.value = text;
+  field.focus();
+  field.select();
+  document.querySelector("#status").textContent = "Copy the selected text manually, or download TXT.";
+}
+document.querySelector("#copy").addEventListener("click", async () => {
+  try {
+    await navigator.clipboard.writeText(text);
+    document.querySelector("#status").textContent = "Narration copied; source notes stay on the page.";
+  } catch {
+    manualCopy();
+  }
+});
+document.querySelector("#manual").addEventListener("click", manualCopy);
+document.querySelector("#download").addEventListener("click", () => {
+  const url = URL.createObjectURL(new Blob([text], {type: "text/plain;charset=utf-8"}));
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "listening-script-example-en.txt";
+  document.body.append(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+});
+</script></html>
