@@ -72,5 +72,6 @@
   $('manual-script').addEventListener('click',()=>{const text=script();if(text===null)return;$('fallback').hidden=false;$('manual-text').value=text;selectField($('manual-text'),$('export-status'));});
   $('download-script').addEventListener('click',()=>{const text=script();if(text!==null)download(text,'listening-script.txt');});
   $('download-references').addEventListener('click',()=>{const text=$('references').value;if(!text.trim()){$('export-status').textContent=t('referencesEmpty');return;}download(text.replace(/\r\n?/g,'\n'),'reference-notes.txt');});
-  setLanguage(document.documentElement.lang.startsWith('zh')?'zh':'en');
+  const requestedLanguage=new URLSearchParams(location.search).get('lang');
+  setLanguage(requestedLanguage==='zh'||(requestedLanguage!=='en'&&document.documentElement.lang.startsWith('zh'))?'zh':'en');
 })();
