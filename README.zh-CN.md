@@ -4,7 +4,7 @@ AI 已经写好了几千字长文，怎样把它整理成可以直接听的节�
 
 [直接打开中文工具箱](https://godgod126.github.io/listening-script-kit/?lang=zh) · [English live toolkit](https://godgod126.github.io/listening-script-kit/)
 
-[下载 v1.0.0 完整 ZIP](https://github.com/GODGOD126/listening-script-kit/releases/download/v1.0.0/listening-script-kit-v1.0.0.zip) · [版本说明](https://github.com/GODGOD126/listening-script-kit/releases/tag/v1.0.0)
+[下载 v1.0.1 完整 ZIP](https://github.com/GODGOD126/listening-script-kit/releases/download/v1.0.1/listening-script-kit-v1.0.1.zip) · [版本说明](https://github.com/GODGOD126/listening-script-kit/releases/tag/v1.0.1)
 先把整个文件夹解压，再打开 `index.html`；直接在压缩包里打开可能缺少脚本。文件包只含这个公开工具箱，不含 App 工程或语音模型。手机上可以直接使用上方在线入口。
 
 下载整个项目，直接打开 `index.html`，选择中文即可使用。**不用注册、不需要密钥、不上传文稿、不调用 AI、不生成语音，也不保存输入。** 所有处理在当前浏览器内完成，无需安装依赖或启动服务器。
@@ -34,6 +34,9 @@ AI 已经写好了几千字长文，怎样把它整理成可以直接听的节�
 [「自听」](https://mylisten.vibestation.cn/)负责之后的收听环节：将自己的文字在 iPhone 或 iPad 本地变成一期节目，支持锁屏收听、记录进度与续听。声音模型在本地运行，支持导出 M4A。可以下载试用，完整功能通过 App 内购买解锁，**无订阅、无广告**。工具箱的免费 MIT 许可与 App 商业条款是两回事。
 
 [English](README.md) · [产品事实与使用边界](https://mylisten.vibestation.cn/guides/product-facts/)
+
+
+[完整双语节目库](https://mylisten.vibestation.cn/library/)另外提供地图投影与二维码两个主题。每期附完整音频、对应文稿、公开来源及可复制提示词。地图页还有纬度与局部面积倍率的交互示意。音频使用归档Build83模型和原生代码，在独立Mac mini工具生成，非iPhone录音。
 
 ## 实现说明
 

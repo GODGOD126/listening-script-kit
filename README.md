@@ -4,7 +4,7 @@ Three small, local-only tools for turning an AI-written long text into a script 
 
 [Use the live toolkit](https://godgod126.github.io/listening-script-kit/) · [打开中文工具箱](https://godgod126.github.io/listening-script-kit/?lang=zh)
 
-[Download the v1.0.0 ZIP](https://github.com/GODGOD126/listening-script-kit/releases/download/v1.0.0/listening-script-kit-v1.0.0.zip) · [Release notes](https://github.com/GODGOD126/listening-script-kit/releases/tag/v1.0.0)
+[Download the v1.0.1 ZIP](https://github.com/GODGOD126/listening-script-kit/releases/download/v1.0.1/listening-script-kit-v1.0.1.zip) · [Release notes](https://github.com/GODGOD126/listening-script-kit/releases/tag/v1.0.1)
 Extract the whole folder before opening `index.html`; opening a file inside a ZIP may leave the scripts unavailable. The release contains only this public kit, with no app code or voice models. The hosted page is the simplest way to try it on a phone.
 
 **No account, API key, package install, analytics, or cloud upload.** Download this repository and open `index.html` in a modern browser. All three tools work without a server. The kit does not generate content or speech, verify facts, or replace a listening app.
@@ -46,6 +46,9 @@ There are no dependencies and no install step. See [LICENSE](LICENSE) for MIT te
 ## A complete listening example
 
 [Voyager: complete English and Chinese scripts, sources, and audio](https://mylisten.vibestation.cn/guides/voyager-listening-case/en/). It shows why entering interstellar space and leaving the solar system are different questions. The AI-assisted writing was checked against NASA material. Audio was made with the models and native code archived in 「自听」MyListen 1.1.5 Build 83 using a separate Mac mini tool, not recorded on an iPhone.
+
+
+[The bilingual episode library](https://mylisten.vibestation.cn/library/en/) also provides map-projection and QR-code explainers, with complete audio, matching scripts, public sources and reusable prompts. The map example includes an interactive local scale illustration. Audio was generated with archived Build 83 models and native code in a separate Mac mini tool, not recorded on an iPhone.
 
 ## About this project
 
