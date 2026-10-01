@@ -31,3 +31,7 @@ AI 已经写好了几千字长文，怎样把它整理成可以直接听的节�
 [「自听」](https://mylisten.vibestation.cn/)负责之后的收听环节：将自己的文字在 iPhone 或 iPad 本地变成一期节目，支持锁屏收听、记录进度与续听。声音模型在本地运行，支持导出 M4A。可以下载试用，完整功能通过 App 内购买解锁，**无订阅、无广告**。工具箱的免费 MIT 许可与 App 商业条款是两回事。
 
 [English](README.md) · [产品事实与使用边界](https://mylisten.vibestation.cn/guides/product-facts/)
+
+## 实现说明
+
+[Unicode字数、原文定位与正文导出的技术说明（英文）](docs/text-review-contracts.md)保留可运行的代码示例、实际核验结果和限制，可独立用于其他文本工具。

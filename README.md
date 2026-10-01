@@ -51,3 +51,7 @@ Created by Ryan Zhu, developer of [「自听」MyListen](https://mylisten.vibest
 「自听」MyListen turns your text into saved audio episodes with local voice models on iPhone and iPad. It supports background and Lock Screen listening, saved progress, and M4A export. The app can be downloaded and tried; full features unlock through an in-app purchase. **No subscription and no ads.** The app's commercial terms are separate from this free MIT-licensed kit.
 
 [中文说明](README.zh-CN.md) · [Product facts and limits](https://mylisten.vibestation.cn/guides/product-facts/en/)
+
+## Implementation notes
+
+[Unicode counts, original-text selection, and narration export](docs/text-review-contracts.md) explains the checked design contracts with runnable examples and explicit limits.
