@@ -4,7 +4,7 @@ AI 已经写好了几千字长文，怎样把它整理成可以直接听的节�
 
 [直接打开中文工具箱](https://godgod126.github.io/listening-script-kit/?lang=zh) · [English live toolkit](https://godgod126.github.io/listening-script-kit/)
 
-[下载 v1.1.0 完整 ZIP](https://github.com/GODGOD126/listening-script-kit/releases/download/v1.1.0/listening-script-kit-v1.1.0.zip) · [版本说明](https://github.com/GODGOD126/listening-script-kit/releases/tag/v1.1.0)
+[下载 v1.2.0 完整 ZIP](https://github.com/GODGOD126/listening-script-kit/releases/download/v1.2.0/listening-script-kit-v1.2.0.zip) · [版本说明](https://github.com/GODGOD126/listening-script-kit/releases/tag/v1.2.0)
 先把整个文件夹解压，再打开 `index.html`；直接在压缩包里打开可能缺少脚本。文件包只含这个公开工具箱，不含 App 工程或语音模型。手机上可以直接使用上方在线入口。
 
 下载整个项目，直接打开 `index.html`，选择中文即可使用。**不用注册、不需要密钥、不上传文稿、不调用 AI、不生成语音，也不保存输入。** 所有处理在当前浏览器内完成，无需安装依赖或启动服务器。
@@ -17,7 +17,7 @@ AI 已经写好了几千字长文，怎样把它整理成可以直接听的节�
 
 ## 先用完整示范试一遍
 
-在线与离线工具箱都内置地图、二维码两主题的中英文完整文稿和来源。选择示范后可填入检查区逐字稿、节目标题、朗读正文与参考资料四栏；已有不同文字时先保留，只有明确选择替换才改动这四栏。切换主题或语言本身不会改输入，也不替换提示词区内容。对应声音在外部案例页，工具箱不含声音模型或音频文件。
+在线与离线工具箱都内置地图、二维码及《弗兰肯斯坦》书籍解读三主题的中英文完整文稿和来源。选择示范后可填入检查区逐字稿、节目标题、朗读正文与参考资料四栏；已有不同文字时先保留，只有明确选择替换才改动这四栏。切换主题或语言本身不会改输入，也不替换提示词区内容。对应声音在外部案例页，工具箱不含声音模型或音频文件。
 
 ## 为什么不直接删掉网址、表格和引用
 
@@ -45,3 +45,6 @@ AI 已经写好了几千字长文，怎样把它整理成可以直接听的节�
 ## 实现说明
 
 [Unicode字数、原文定位与正文导出的技术说明（英文）](docs/text-review-contracts.md)保留可运行的代码示例、实际核验结果和限制，可独立用于其他文本工具。
+
+
+《弗兰肯斯坦》示范是依据1818年三卷原著编写的原创书籍解读，含重要情节和结局；原著链接和章节核查单独保留。[完整对应声音](https://mylisten.vibestation.cn/library/frankenstein/)。

@@ -4,7 +4,7 @@ const fs=require('node:fs');
 const path=require('node:path');
 const {catalog,fields,conflicts}=require('../lib/complete-examples.js');
 const {serialize}=require('../lib/narration.js');
-for(const topic of ['map','qr']){
+for(const topic of Object.keys(catalog)){
   for(const language of ['zh','en']){
     const example=catalog[topic][language];
     const incoming=fields(example);
@@ -31,4 +31,4 @@ for(const topic of ['map','qr']){
 assert.throws(()=>fields(null));
 const source=fs.readFileSync(path.join(__dirname,'../lib/complete-examples.js'),'utf8');
 assert(!/fetch\s*\(|XMLHttpRequest|sendBeacon|localStorage|sessionStorage|eval\s*\(/.test(source));
-console.log('PASS: four complete bilingual texts, source separation and every overwrite conflict; no input mutation, network or storage calls.');
+console.log('PASS: all complete bilingual texts, source separation and every overwrite conflict; no input mutation, network or storage calls.');

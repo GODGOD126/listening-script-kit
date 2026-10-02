@@ -4,14 +4,14 @@ Three small, local-only tools for turning an AI-written long text into a script 
 
 [Use the live toolkit](https://godgod126.github.io/listening-script-kit/) · [打开中文工具箱](https://godgod126.github.io/listening-script-kit/?lang=zh)
 
-[Download the v1.1.0 ZIP](https://github.com/GODGOD126/listening-script-kit/releases/download/v1.1.0/listening-script-kit-v1.1.0.zip) · [Release notes](https://github.com/GODGOD126/listening-script-kit/releases/tag/v1.1.0)
+[Download the v1.2.0 ZIP](https://github.com/GODGOD126/listening-script-kit/releases/download/v1.2.0/listening-script-kit-v1.2.0.zip) · [Release notes](https://github.com/GODGOD126/listening-script-kit/releases/tag/v1.2.0)
 Extract the whole folder before opening `index.html`; opening a file inside a ZIP may leave the scripts unavailable. The release contains only this public kit, with no app code or voice models. The hosted page is the simplest way to try it on a phone.
 
 **No account, API key, package install, analytics, or cloud upload.** Download this repository and open `index.html` in a modern browser. All three tools work without a server. The kit does not generate content or speech, verify facts, or replace a listening app.
 
 ## Start with bundled complete scripts
 
-The live and offline kit include source-checked Chinese and English map and QR-code explainers. Choose an example to fill the review draft, title, narration and reference fields. Existing different text is kept until you explicitly choose to replace those four fields; changing the example or language alone never rewrites your input. Prompt inputs are not replaced. Matching audio is available on the external case pages, not bundled into the kit.
+The live and offline kit include source-checked Chinese and English map and QR-code explainers plus an original Frankenstein book discussion. Choose an example to fill the review draft, title, narration and reference fields. Existing different text is kept until you explicitly choose to replace those four fields; changing the example or language alone never rewrites your input. Prompt inputs are not replaced. Matching audio is available on the external case pages, not bundled into the kit.
 
 ## Try it
 
@@ -35,7 +35,7 @@ The review limit is 100,000 Unicode characters. An over-limit draft is rejected 
 | `lib/prompt-core.js` | Bilingual writing prompts for six kinds of listening script |
 | `lib/draft-check.js` | Pure text-pattern analyzer, usable in a browser or Node |
 | `lib/narration.js` | One narration serializer shared by copy and TXT |
-| `lib/complete-examples.js` | Four complete bilingual scripts and source notes, with overwrite checks |
+| `lib/complete-examples.js` | Six complete bilingual scripts and source notes, with overwrite checks |
 | `examples/narration-export-zh.html` | Self-contained Chinese export example |
 | `examples/narration-export-en.html` | Self-contained English export example |
 | `tests/core.test.cjs` | Representative source, Unicode, boundary, and export checks |
@@ -66,3 +66,6 @@ Created by Ryan Zhu, developer of [「自听」MyListen](https://mylisten.vibest
 ## Implementation notes
 
 [Unicode counts, original-text selection, and narration export](docs/text-review-contracts.md) explains the checked design contracts with runnable examples and explicit limits.
+
+
+The Frankenstein example is an original discussion of the 1818 three-volume novel and contains major plot events and the ending. Its source links and chapter checks stay outside the narration. [Complete matching audio](https://mylisten.vibestation.cn/library/frankenstein/en/).
