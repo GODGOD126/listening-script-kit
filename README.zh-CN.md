@@ -1,5 +1,7 @@
 # 长文节目工具箱
 
+[历史节目：为什么火车改变了我们的时间？](learning/railway-time/README.md)。完整中文听稿、事实核查表、两家机构史料和8分05秒AI合成音频；Mac生成，非iPhone录音。
+
 [学习素材：平均数与中位数](learning/mean-median/README.md)。完整原创听稿、学习提示词、来源和已核对的虚构练习，以及单独提供的[8分17秒中文AI合成音频](https://github.com/GODGOD126/listening-script-kit/releases/tag/zh-audio-demo-20261004)，展示知识讲解型长文用途。音频在Mac端生成，非iPhone录音；不承诺学习效果。工具箱本身仍只处理文字。
 
 AI 已经写好了几千字长文，怎样把它整理成可以直接听的节目稿？这个工具箱提供三个步骤：写一个合适的提示词，检查听起来可能不方便的格式，把正文和参考资料分开导出。

@@ -1,0 +1,23 @@
+铁路与标准时间：事实核查表
+核查日：2026-10-04，北京时间。
+
+来源A：Royal Museums Greenwich，Emily Akkermans（Curator of Time）
+https://www.rmg.co.uk/stories/time/time-greenwich-mean-time-confusing-case-travellers-watch
+正文证据 railway-time-rmg-source.txt。
+1. 十九世纪初英国各地地方平均时随东西方向不同；普利茅斯比格林尼治晚约16.5分钟。
+2. 馆藏ZAA0744旅行怀表有两根分针、一根时针；文章将制作联系到1847年。主人身份未知，不能写确定的旅行者姓名或真实旅程。
+3. 1847年Railway Clearing House建议各站采用格林尼治时间；不能写同日所有英国钟立即统一。
+4. 1852年格林尼治天文台电钟系统可向Lewisham站发送时间信号，经电报线分发。
+5. 1880年GMT成为Great Britain legal time；Great Britain译为大不列颠，不外推整个帝国或爱尔兰。
+
+来源B：NIST，A Walk Through Time - World Time Scales（历史档案，正文准确性声明截至2004年）
+https://www.nist.gov/pml/time-and-frequency-division/popular-links/walk-through-time/walk-through-time-world-time-scales
+正文证据 railway-time-nist-source.txt。页面2026更新时间不能当成历史正文已全面更新。
+6. 十九世纪四十年代英国铁路标准时逐步形成；1852年格林尼治开始电报授时；1855年英国多数采用格林尼治时。
+7. 美国铁路业于1883年11月18日实施Standard Railway Time System；早于1884年国际本初子午线会议。
+8. 1884年华盛顿会议采用格林尼治子午线作为经度与计时的本初子午线。不能说它强制所有国家当晚实行24个整小时区。
+9. 美国时区标准系统于1918年3月国会法案正式确立。1883年行业实施与1918年法律不是同一事件。
+10. 360度/24小时=平均每小时15度；真实时区边界会按便利和当地需求调整。
+
+自行演示：经度差1度约4分钟是以上平均关系的算术推导；“两城相差10分钟”的例子是假设，不是某条真实铁路时刻表。正午描述为太阳越过当地子午线的简化理解；地方平均时使用平均太阳概念，并非钟表每天随日晷逐秒走。
+不纳入：未读的铁路事故、谁第一个发明时区、全球强制统一时间、具体当代UTC闰秒政策、两城真实时刻表、怀表主人的经历。声音生成位置、App性能及下载效果均不由史料证明。

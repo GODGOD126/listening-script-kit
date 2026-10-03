@@ -1,0 +1,18 @@
+节目：为什么火车改变了我们的时间？
+资料核查：2026-10-04。中文文稿由Ryan Zhu与AI辅助综合编写；AI合成声音，Mac本地归档模型生成，非iPhone录音或性能测试。
+
+1. Royal Museums Greenwich：A time before Greenwich Mean Time
+作者：Emily Akkermans，Curator of Time。
+https://www.rmg.co.uk/stories/time/time-greenwich-mean-time-confusing-case-travellers-watch
+支持：双分针旅行怀表、普利茅斯约16.5分钟地方时差、1847年铁路机构建议统一时间、1852年电报授时、1880年大不列颠法定时间。
+没有使用或再分发馆藏图片；本页封面为AI概念插图，不是具体馆藏照片或复原。
+
+2. NIST：A Walk Through Time - World Time Scales
+https://www.nist.gov/pml/time-and-frequency-division/popular-links/walk-through-time/walk-through-time-world-time-scales
+支持：英国十九世纪铁路标准时及1852电报授时；美国1883年11月18日铁路标准时；1884年本初子午线会议；1918年3月美国法律确认；平均15度及现实边界调整。
+这个页面是在线历史档案，正文明确资料准确性截至2004年；网页较新的更新时间不等于所有政策已更新。本节目不据此介绍当代UTC或闰秒政策。
+
+讲解边界：
+“两城钟表差十分钟”是帮助理解的假设，不是真实列车时刻表。360度/24小时及每度约4分钟为简化算术解释。未断言谁最早发现时差，未编造怀表主人或其真实旅程。全文为原创中文综合讲解，不是两篇原文的逐字翻译。资料机构未为节目或App背书，未测量学习效果。
+
+原创文稿以MIT许可提供，第三方史料仍归其来源。可以独立收听、阅读、核对，无需购买App。
