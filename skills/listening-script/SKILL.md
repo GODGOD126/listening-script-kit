@@ -31,3 +31,5 @@ For a long source, preserve continuity and a consistent glossary across sections
 Before delivery, compare the script against the source for changed numbers, causality, attribution, qualifiers, and omissions. Mentally check whether each section works without its original chart or screen. This skill produces text; it does not synthesize audio, publish, install software, or access accounts. Do not request keys or upload source material to an additional service.
 
 Read [references/worked-example.md](references/worked-example.md) when a source contains a comparison table and uncertainty; it shows a small adaptation and the checks that preserve its limits.
+
+When the user needs a Chinese starter request for book notes, dated news materials, or a sourced history question, read [references/chinese-starters.md](references/chinese-starters.md). Its prompts are examples, not a fixed length or permission to research, synthesize audio, publish, or add product mentions to the user's script.
