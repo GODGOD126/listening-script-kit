@@ -18,9 +18,9 @@ AI写好了几千字长文，想把它变成自己能听的节目？这里提供
 
 **工具箱不调用AI、不生成声音、不上传文稿、不需要账号或密钥。** 文本处理在当前浏览器内完成；关闭页面会丢失未保存输入。你使用的其他AI与语音工具另按其规则运行。
 
-[中文详细说明](README.zh-CN.md) · [v1.3.0离线工具箱ZIP](https://github.com/GODGOD126/listening-script-kit/releases/download/v1.3.0/listening-script-kit-v1.3.0.zip) · [版本说明](https://github.com/GODGOD126/listening-script-kit/releases/tag/v1.3.0)
+[中文详细说明](README.zh-CN.md) · [v1.3.1离线工具箱ZIP](https://github.com/GODGOD126/listening-script-kit/releases/download/v1.3.1/listening-script-kit-v1.3.1.zip) · [版本说明](https://github.com/GODGOD126/listening-script-kit/releases/tag/v1.3.1)
 
-离线ZIP是工具箱1.3.0版本，解压完整文件夹后打开index.html。上面新增的中文请求在当前源码中，音频另行提供；ZIP不包含App工程或语音模型。
+离线ZIP为1.3.1：解压完整文件夹后打开index.html，默认中文，也可切换英文。包含中文请求、完整示范文稿、正文与参考资料导出和纯文字Skill；三份音频另在上方在线资源页提供，ZIP不含音频、App工程或语音模型。
 
 ## 已经在使用Agent？
 

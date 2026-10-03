@@ -8,10 +8,10 @@ AI 已经写好了几千字长文，怎样把它整理成可以直接听的节�
 
 [直接打开中文工具箱](https://godgod126.github.io/listening-script-kit/?lang=zh) · [English live toolkit](https://godgod126.github.io/listening-script-kit/?lang=en)
 
-[下载 v1.3.0 完整 ZIP](https://github.com/GODGOD126/listening-script-kit/releases/download/v1.3.0/listening-script-kit-v1.3.0.zip) · [版本说明](https://github.com/GODGOD126/listening-script-kit/releases/tag/v1.3.0)
+[下载 v1.3.1 完整 ZIP](https://github.com/GODGOD126/listening-script-kit/releases/download/v1.3.1/listening-script-kit-v1.3.1.zip) · [版本说明](https://github.com/GODGOD126/listening-script-kit/releases/tag/v1.3.1)
 先把整个文件夹解压，再打开 `index.html`；直接在压缩包里打开可能缺少脚本。文件包只含这个公开工具箱，不含 App 工程或语音模型。手机上可以直接使用上方在线入口。
 
-当前在线页和源码默认中文，可随时切换English；旧v1.3.0离线ZIP默认英文，点中文即可使用。下载当前整个项目后可直接打开 `index.html`。**不用注册、不需要密钥、不上传文稿、不调用 AI、不生成语音，也不保存输入。** 所有处理在当前浏览器内完成，无需安装依赖或启动服务器。
+当前在线页和源码默认中文，可随时切换English；旧v1.3.1离线ZIP默认英文，点中文即可使用。下载当前整个项目后可直接打开 `index.html`。**不用注册、不需要密钥、不上传文稿、不调用 AI、不生成语音，也不保存输入。** 所有处理在当前浏览器内完成，无需安装依赖或启动服务器。
 
 1. 选择节目类型和主题，补上可核查的资料，生成提示词。再把提示词复制到你自己选择的 AI 工具。这里不会替你联系或上传到那个工具。
 2. 将得到的逐字稿粘贴到检查区。工具提示长段落、网址、表格、代码和可能的公式，不擅自改写或删除原文。这些是建议，不是事实或发音检查。
