@@ -1,5 +1,7 @@
 # 长文节目工具箱
 
+[新学习素材：平均数与中位数](learning/mean-median/README.md)。完整原创听稿、学习提示词、来源和已核对的虚构练习，展示知识讲解型长文用途；不含音频，不承诺学习效果。
+
 AI 已经写好了几千字长文，怎样把它整理成可以直接听的节目稿？这个工具箱提供三个步骤：写一个合适的提示词，检查听起来可能不方便的格式，把正文和参考资料分开导出。
 
 [直接打开中文工具箱](https://godgod126.github.io/listening-script-kit/?lang=zh) · [English live toolkit](https://godgod126.github.io/listening-script-kit/)

@@ -40,6 +40,8 @@ Example request: “Use listening-script to turn this research report into a Chi
 
 ## Why references stay separate
 
+[Try a Chinese study episode: mean vs median](learning/mean-median/README.md). The pack includes a complete original narration, a reusable study prompt, separate source notes and checked fictional exercises. It demonstrates learning long texts, not just news or stories. No audio or learning-outcome claim is included.
+
 A source URL is valuable evidence but rarely useful when a voice reads out its punctuation. A table can contain useful information while still needing spoken sentences. This kit flags such patterns and leaves the writing decision to you. It does not remove citations, determine copyright, or certify that a script is safe or accurate.
 
 The review limit is 100,000 Unicode characters. An over-limit draft is rejected without truncating or altering it. Review output identifies line numbers; review suggestions can include false positives. Prompt material is limited to 15,000 characters, with an explicit warning before a prompt is built if the limit is exceeded.
