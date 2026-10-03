@@ -61,7 +61,7 @@ CLI是另一个工具，会从GitHub下载文件。安装前先阅读技能，�
 
 [「自听」](https://mylisten.vibestation.cn/)负责之后的收听环节：将自己的文字在 iPhone 或 iPad 本地变成一期节目，支持锁屏收听、记录进度与续听。声音模型在本地运行，支持导出 M4A。可以下载试用，完整功能通过 App 内购买解锁，**无订阅、无广告**。工具箱的免费 MIT 许可与 App 商业条款是两回事。
 
-[English](README.md) · [自听产品介绍](https://mylisten.vibestation.cn/)
+[English](README.en.md) · [自听产品介绍](https://mylisten.vibestation.cn/)
 
 
 

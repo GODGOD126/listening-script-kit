@@ -1,88 +1,44 @@
-# Listening Script Kit / 长文节目工具箱
+# 长文节目工具箱
 
-Three small, local-only tools for turning an AI-written long text into a script you can actually listen to: build a writing prompt, review patterns that need attention, and export the narration separately from its references.
+AI写好了几千字长文，想把它变成自己能听的节目？这里提供免费听稿准备工具、可复制的中文请求，以及完整音频例子。先听一份，再用自己的主题试一遍。
 
-[Use the live toolkit](https://godgod126.github.io/listening-script-kit/) · [打开中文工具箱](https://godgod126.github.io/listening-script-kit/?lang=zh)
+## 先听两个完整中文例子
 
-[Download the v1.3.0 ZIP](https://github.com/GODGOD126/listening-script-kit/releases/download/v1.3.0/listening-script-kit-v1.3.0.zip) · [Release notes](https://github.com/GODGOD126/listening-script-kit/releases/tag/v1.3.0)
-Extract the whole folder before opening `index.html`; opening a file inside a ZIP may leave the scripts unavailable. The release contains only this public kit, with no app code or voice models. The hosted page is the simplest way to try it on a phone.
+- [为什么火车改变了我们的时间？](https://godgod126.github.io/listening-script-kit/learning/railway-time/)：约8分05秒，从铁路讲到标准时间制度；附正文、事实表和机构来源。
+- [平均十分钟，为什么没有人等十分钟？](https://godgod126.github.io/listening-script-kit/learning/mean-median/)：约8分17秒，用原创虚构例子讲平均数、中位数和小组比较。
 
-**No account, API key, package install, analytics, or cloud upload.** Download this repository and open `index.html` in a modern browser. All three tools work without a server. The kit does not generate content or speech, verify facts, or replace a listening app.
+两份音频均为AI合成，在Mac端生成，非iPhone录音或设备性能测试；免费收听，不要求购买App。音频与正文可以分别下载，核验范围在各自说明中保留。
 
-[Play the complete Chinese audio lesson in your browser](https://godgod126.github.io/listening-script-kit/learning/mean-median/). AI voice generated on Mac, not an iPhone recording; no account or app purchase required.
+## 用自己的长文开始
 
-## Start with bundled complete scripts
+1. [打开中文工具箱](https://godgod126.github.io/listening-script-kit/?lang=zh)：生成写作提示词、检查影响收听的文本格式、把正文和参考资料分开导出。
+2. [复制一份中文请求](skills/listening-script/references/chinese-starters.md)：已有读书笔记、明确日期的AI资讯、有来源的历史问题。替换资料、篇幅和允许改写范围，再交给你选定的AI工具。
+3. 保存并核对听稿，再使用你自己的文字转语音工具收听。
 
-The live and offline kit include source-checked Chinese and English map and QR-code explainers plus an original Frankenstein book discussion. Choose an example to fill the review draft, title, narration and reference fields. Existing different text is kept until you explicitly choose to replace those four fields; changing the example or language alone never rewrites your input. Prompt inputs are not replaced. The kit bundles text only. Matching episode audio pages have been withdrawn; the product page retains its original four Chinese voice samples, which are separate from these scripts.
+**工具箱不调用AI、不生成声音、不上传文稿、不需要账号或密钥。** 文本处理在当前浏览器内完成；关闭页面会丢失未保存输入。你使用的其他AI与语音工具另按其规则运行。
 
-## Try it
+[中文详细说明](README.zh-CN.md) · [v1.3.0离线工具箱ZIP](https://github.com/GODGOD126/listening-script-kit/releases/download/v1.3.0/listening-script-kit-v1.3.0.zip) · [版本说明](https://github.com/GODGOD126/listening-script-kit/releases/tag/v1.3.0)
 
-1. Open `index.html`, then select English or 中文.
-2. Choose a subject and add source notes. Generate a prompt to use in your preferred AI writing tool. The kit itself does not contact that tool.
-3. Paste **only the spoken script** into the review step. Long paragraphs, links, Markdown tables, code fences, and possible formulas are suggestions to inspect, not automatic errors. The text is never rewritten.
-4. Keep the title, narration, and reference notes in their separate fields. Copy or download the narration as TXT. Download a second TXT to retain the references.
+离线ZIP是工具箱1.3.0版本，解压完整文件夹后打开index.html。上面新增的中文请求在当前源码中，两份音频另行提供；ZIP不包含App工程或语音模型。
 
-If automatic clipboard access is unavailable, use **Manual copy** or download TXT. Closing the page loses unsaved input; this is intentional. The kit does not use browser storage.
+## 已经在使用Agent？
 
-## Use the listening-script agent skill
+[listening-script技能](skills/listening-script/SKILL.md)把已有材料整理成适合听的文字，保留数字、来源归属和不确定性。[虚构报告对照例子](skills/listening-script/references/worked-example.md)展示表格如何变成口语，且不丢失测试范围。
 
-[Read the skill](skills/listening-script/SKILL.md) · [See the worked example](skills/listening-script/references/worked-example.md)
+技能只有文字指导，不执行脚本、不请求密钥、不合成音频，也不会在你的节目稿中自动加入产品广告。如何安装、启用和使用请看[中文说明](README.zh-CN.md#给ai使用的听稿技能)。
 
-The skill adapts research reports, articles, book notes, and AI drafts for listening while preserving numbers, source attribution, uncertainty, and the requested detail. It keeps source notes separate and does not append product advertising to your narration. It is instruction-only: no scripts, API calls, voice generation, or account access.
+## 听稿之后的收听环节
 
-Copy the `skills/listening-script` folder to your agent's skill directory, or use the [open skills CLI](https://skills.sh/docs):
+本项目由「自听」MyListen开发者 Ryan Zhu 提供，AI辅助编写；可以与其他收听工具配合使用。
 
-```sh
-npx skills add GODGOD126/listening-script-kit --skill listening-script
-```
+[「自听」](https://mylisten.vibestation.cn/)将自己的文字在iPhone或iPad本地生成、保存为音频，支持锁屏收听、记录进度、续听和导出M4A。可下载试用，完整功能通过App内购买解锁，**无订阅、无广告**。
 
-The CLI is a separate tool and downloads files from GitHub. Review the skill before installing; follow the CLI prompts for your chosen agent and scope. Its installation telemetry can be disabled with `DISABLE_TELEMETRY=1`. The plain browser toolkit requires no installation.
+[中国区App Store](https://apps.apple.com/cn/app/id6790382144) · [原有四段中文声音示范](https://mylisten.vibestation.cn/#listen)
 
-Example request: “Use listening-script to turn this research report into a Chinese narration. Keep the detail and evidence limits; explain the tables in spoken sentences, and put URLs in separate notes.”
+这个免费工具箱与原创请求采用[MIT许可](LICENSE)，App商业条款另行适用；第三方来源保留其版权与使用条件。工具不替代事实、版权或真人听感核验。
 
-## Why references stay separate
+## 源码与说明
 
-[Try a study episode: mean vs median](learning/mean-median/README.md). The pack includes complete Chinese and English narrations, reusable study prompts, separate source notes and checked fictional exercises. A [separate 8m17s Chinese AI-speech demo](https://github.com/GODGOD126/listening-script-kit/releases/tag/zh-audio-demo-20261004) is available as a release attachment. It was generated on Mac, not recorded on iPhone. The toolkit remains text-only; no learning-outcome or real-device performance claim is made.
+工具无依赖，已有Node时运行npm test检查文本、Unicode、导出和原文保护。核心代码在lib/，单文件示例在examples/，完整听稿与来源在learning/；[技术说明](docs/text-review-contracts.md)保留实现边界。
 
-A source URL is valuable evidence but rarely useful when a voice reads out its punctuation. A table can contain useful information while still needing spoken sentences. This kit flags such patterns and leaves the writing decision to you. It does not remove citations, determine copyright, or certify that a script is safe or accurate.
-
-The review limit is 100,000 Unicode characters. An over-limit draft is rejected without truncating or altering it. Review output identifies line numbers; review suggestions can include false positives. Prompt material is limited to 15,000 characters, with an explicit warning before a prompt is built if the limit is exceeded.
-
-## Files and reuse
-
-| File | Purpose |
-| --- | --- |
-| `lib/prompt-core.js` | Bilingual writing prompts for six kinds of listening script |
-| `lib/draft-check.js` | Pure text-pattern analyzer, usable in a browser or Node |
-| `lib/narration.js` | One narration serializer shared by copy and TXT |
-| `lib/complete-examples.js` | Six complete bilingual scripts and source notes, with overwrite checks |
-| `examples/narration-export-zh.html` | Self-contained Chinese export example |
-| `examples/narration-export-en.html` | Self-contained English export example |
-| `tests/core.test.cjs` | Representative source, Unicode, boundary, and export checks |
-
-The source files are plain JavaScript. To run the checks with Node already installed:
-
-```sh
-npm test
-```
-
-There are no dependencies and no install step. See [LICENSE](LICENSE) for MIT terms. The license covers this code and its original examples; linked third-party source material retains its own terms.
-
-## Voice samples
-
-[Listen to the original four Chinese voice samples](https://mylisten.vibestation.cn/#listen). These are product demonstrations, not recordings of the bundled example scripts. The former complete episode library and case pages have been withdrawn. The bundled map, QR-code and Frankenstein texts and their source notes remain available in the toolkit.
-
-## About this project
-
-Created by Ryan Zhu, developer of [「自听」MyListen](https://mylisten.vibestation.cn/en/), with AI assistance. The kit is an independent preparation resource. It works with other listening tools too.
-
-「自听」MyListen turns your text into saved audio episodes with local voice models on iPhone and iPad. It supports background and Lock Screen listening, saved progress, and M4A export. The app can be downloaded and tried; full features unlock through an in-app purchase. **No subscription and no ads.** The app's commercial terms are separate from this free MIT-licensed kit.
-
-[中文说明](README.zh-CN.md) · [MyListen product page](https://mylisten.vibestation.cn/en/)
-
-## Implementation notes
-
-[Unicode counts, original-text selection, and narration export](docs/text-review-contracts.md) explains the checked design contracts with runnable examples and explicit limits.
-
-
-The Frankenstein example is an original discussion of the 1818 three-volume novel and contains major plot events and the ending. Its source links and chapter checks stay outside the narration.
+[English documentation](README.en.md) · [完整中文使用说明](README.zh-CN.md)
