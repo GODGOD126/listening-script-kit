@@ -9,6 +9,8 @@ Extract the whole folder before opening `index.html`; opening a file inside a ZI
 
 **No account, API key, package install, analytics, or cloud upload.** Download this repository and open `index.html` in a modern browser. All three tools work without a server. The kit does not generate content or speech, verify facts, or replace a listening app.
 
+[Play the complete Chinese audio lesson in your browser](https://godgod126.github.io/listening-script-kit/learning/mean-median/). AI voice generated on Mac, not an iPhone recording; no account or app purchase required.
+
 ## Start with bundled complete scripts
 
 The live and offline kit include source-checked Chinese and English map and QR-code explainers plus an original Frankenstein book discussion. Choose an example to fill the review draft, title, narration and reference fields. Existing different text is kept until you explicitly choose to replace those four fields; changing the example or language alone never rewrites your input. Prompt inputs are not replaced. The kit bundles text only. Matching episode audio pages have been withdrawn; the product page retains its original four Chinese voice samples, which are separate from these scripts.

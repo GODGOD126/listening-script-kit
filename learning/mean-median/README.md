@@ -8,6 +8,8 @@
 
 ## 先听完整中文示范
 
+[直接播放并查看完整稿件](https://godgod126.github.io/listening-script-kit/learning/mean-median/)。当前浏览器可保存本机收听位置；无需账号或购买App。
+
 [下载8分17秒MP3](https://github.com/GODGOD126/listening-script-kit/releases/download/zh-audio-demo-20261004/mean-median-zh.mp3) · [下载实际生成稿及核验说明](https://github.com/GODGOD126/listening-script-kit/releases/tag/zh-audio-demo-20261004)
 
 题目是“平均十分钟，为什么没有人等十分钟”。声音为AI合成，含明确开场说明。音频使用Mac端现有本地生成器与归档模型制作，非iPhone录音或真机性能测试；全文ASR核对了主要例子、关键数字与结尾，不能代替真人听感评分，也没有学习效果实验。可独立收听，无需购买App；浏览器若仅下载不播放，可保存MP3后用音频播放器打开。音频不包含产品广告。
