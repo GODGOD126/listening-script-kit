@@ -1,11 +1,11 @@
-<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>朗读稿与来源分离：可运行导出示例 — 「自听」MyListen</title><link rel="canonical" href="https://mylisten.vibestation.cn/samples/script-export-example.html"><meta name="description" content="一个不调用AI的完整前端示例：让朗读稿与来源分离，复制和TXT使用同一份文字，并提供手动复制备用入口。">
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>朗读稿与来源分离：可运行导出示例 — 「自听」MyListen</title><link rel="canonical" href="https://godgod126.github.io/listening-script-kit/examples/narration-export-zh.html"><meta name="description" content="一个不调用AI的完整前端示例：让朗读稿与来源分离，复制和TXT使用同一份文字，并提供手动复制备用入口。">
 <style>body{max-width:740px;margin:40px auto;padding:0 20px;font:18px/1.8 system-ui;background:#fbf8f3;color:#302c28}button{font:inherit;padding:12px 20px;margin:8px 8px 8px 0;cursor:pointer}textarea{box-sizing:border-box;width:100%;min-height:180px;font:inherit;padding:14px}article,aside{padding:20px;background:white;border:1px solid #ded5ca;border-radius:16px;margin:24px 0}a{overflow-wrap:anywhere;color:#704321}</style>
-<nav aria-label="语言"><a href="https://mylisten.vibestation.cn/samples/script-export-example-en.html" lang="en">English</a></nav><h1>一份正文，两种导出方式</h1><p><a href="https://mylisten.vibestation.cn/samples/script-export-example-source.txt" download="script-export-example.html">下载完整HTML源码</a></p><p>这是固定内容的前端示例，不调用AI、不生成语音、不上传或保存输入。文稿是节选演示，完整旅行者号案例另有来源核查。</p>
+<nav aria-label="语言"><a href="narration-export-en.html" lang="en">English</a></nav><h1>一份正文，两种导出方式</h1><p><a href="narration-export-zh.html" download="script-export-example.html">下载完整HTML源码</a></p><p>这是固定内容的前端示例，不调用AI、不生成语音、不上传或保存输入。文稿是节选演示，下方单独保留NASA来源。</p>
 <article aria-label="示范朗读稿"><h2 id="script-title"></h2><div id="paragraphs"></div></article>
 <button id="copy" type="button">复制纯文字稿</button><button id="download" type="button">下载同一份TXT</button><button id="manual" type="button">手动复制备用入口</button>
 <p id="status" role="status" aria-live="polite"></p><div id="fallback" hidden><label for="text">请选中并复制下方完整文字</label><textarea id="text" readonly></textarea></div>
 <aside><h2>来源留在朗读稿之外</h2><p>核查日期：2026-10-02。这里保存资料来源与使用范围，复制和TXT不包含本栏。</p><ul id="sources"></ul></aside>
-<p>示例由「自听」MyListen开发者Ryan Zhu提供，AI辅助编写并验证。<a href="https://mylisten.vibestation.cn/guides/voyager-listening-case/">完整案例与TXT</a> · <a href="https://mylisten.vibestation.cn/">自听与实际试听</a></p>
+<p>示例由「自听」MyListen开发者Ryan Zhu提供，AI辅助编写并验证。<a href="../index.html">内置完整文稿与来源</a> · <a href="https://mylisten.vibestation.cn/">自听与实际试听</a></p>
 <script>
 "use strict";
 const episode = {

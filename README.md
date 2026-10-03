@@ -4,14 +4,14 @@ Three small, local-only tools for turning an AI-written long text into a script 
 
 [Use the live toolkit](https://godgod126.github.io/listening-script-kit/) · [打开中文工具箱](https://godgod126.github.io/listening-script-kit/?lang=zh)
 
-[Download the v1.2.0 ZIP](https://github.com/GODGOD126/listening-script-kit/releases/download/v1.2.0/listening-script-kit-v1.2.0.zip) · [Release notes](https://github.com/GODGOD126/listening-script-kit/releases/tag/v1.2.0)
+[Download the v1.3.0 ZIP](https://github.com/GODGOD126/listening-script-kit/releases/download/v1.3.0/listening-script-kit-v1.3.0.zip) · [Release notes](https://github.com/GODGOD126/listening-script-kit/releases/tag/v1.3.0)
 Extract the whole folder before opening `index.html`; opening a file inside a ZIP may leave the scripts unavailable. The release contains only this public kit, with no app code or voice models. The hosted page is the simplest way to try it on a phone.
 
 **No account, API key, package install, analytics, or cloud upload.** Download this repository and open `index.html` in a modern browser. All three tools work without a server. The kit does not generate content or speech, verify facts, or replace a listening app.
 
 ## Start with bundled complete scripts
 
-The live and offline kit include source-checked Chinese and English map and QR-code explainers plus an original Frankenstein book discussion. Choose an example to fill the review draft, title, narration and reference fields. Existing different text is kept until you explicitly choose to replace those four fields; changing the example or language alone never rewrites your input. Prompt inputs are not replaced. Matching audio is available on the external case pages, not bundled into the kit.
+The live and offline kit include source-checked Chinese and English map and QR-code explainers plus an original Frankenstein book discussion. Choose an example to fill the review draft, title, narration and reference fields. Existing different text is kept until you explicitly choose to replace those four fields; changing the example or language alone never rewrites your input. Prompt inputs are not replaced. The kit bundles text only. Matching episode audio pages have been withdrawn; the product page retains its original four Chinese voice samples, which are separate from these scripts.
 
 ## Try it
 
@@ -21,6 +21,22 @@ The live and offline kit include source-checked Chinese and English map and QR-c
 4. Keep the title, narration, and reference notes in their separate fields. Copy or download the narration as TXT. Download a second TXT to retain the references.
 
 If automatic clipboard access is unavailable, use **Manual copy** or download TXT. Closing the page loses unsaved input; this is intentional. The kit does not use browser storage.
+
+## Use the listening-script agent skill
+
+[Read the skill](skills/listening-script/SKILL.md) · [See the worked example](skills/listening-script/references/worked-example.md)
+
+The skill adapts research reports, articles, book notes, and AI drafts for listening while preserving numbers, source attribution, uncertainty, and the requested detail. It keeps source notes separate and does not append product advertising to your narration. It is instruction-only: no scripts, API calls, voice generation, or account access.
+
+Copy the `skills/listening-script` folder to your agent's skill directory, or use the [open skills CLI](https://skills.sh/docs):
+
+```sh
+npx skills add GODGOD126/listening-script-kit --skill listening-script
+```
+
+The CLI is a separate tool and downloads files from GitHub. Review the skill before installing; follow the CLI prompts for your chosen agent and scope. Its installation telemetry can be disabled with `DISABLE_TELEMETRY=1`. The plain browser toolkit requires no installation.
+
+Example request: “Use listening-script to turn this research report into a Chinese narration. Keep the detail and evidence limits; explain the tables in spoken sentences, and put URLs in separate notes.”
 
 ## Why references stay separate
 
@@ -48,12 +64,9 @@ npm test
 
 There are no dependencies and no install step. See [LICENSE](LICENSE) for MIT terms. The license covers this code and its original examples; linked third-party source material retains its own terms.
 
-## A complete listening example
+## Voice samples
 
-[Voyager: complete English and Chinese scripts, sources, and audio](https://mylisten.vibestation.cn/guides/voyager-listening-case/en/). It shows why entering interstellar space and leaving the solar system are different questions. The AI-assisted writing was checked against NASA material. Audio was made with the models and native code archived in 「自听」MyListen 1.1.5 Build 83 using a separate Mac mini tool, not recorded on an iPhone.
-
-
-[The bilingual episode library](https://mylisten.vibestation.cn/library/en/) also provides map-projection and QR-code explainers, with complete audio, matching scripts, public sources and reusable prompts. The map example includes an interactive local scale illustration. Audio was generated with archived Build 83 models and native code in a separate Mac mini tool, not recorded on an iPhone.
+[Listen to the original four Chinese voice samples](https://mylisten.vibestation.cn/#listen). These are product demonstrations, not recordings of the bundled example scripts. The former complete episode library and case pages have been withdrawn. The bundled map, QR-code and Frankenstein texts and their source notes remain available in the toolkit.
 
 ## About this project
 
@@ -61,11 +74,11 @@ Created by Ryan Zhu, developer of [「自听」MyListen](https://mylisten.vibest
 
 「自听」MyListen turns your text into saved audio episodes with local voice models on iPhone and iPad. It supports background and Lock Screen listening, saved progress, and M4A export. The app can be downloaded and tried; full features unlock through an in-app purchase. **No subscription and no ads.** The app's commercial terms are separate from this free MIT-licensed kit.
 
-[中文说明](README.zh-CN.md) · [Product facts and limits](https://mylisten.vibestation.cn/guides/product-facts/en/)
+[中文说明](README.zh-CN.md) · [MyListen product page](https://mylisten.vibestation.cn/en/)
 
 ## Implementation notes
 
 [Unicode counts, original-text selection, and narration export](docs/text-review-contracts.md) explains the checked design contracts with runnable examples and explicit limits.
 
 
-The Frankenstein example is an original discussion of the 1818 three-volume novel and contains major plot events and the ending. Its source links and chapter checks stay outside the narration. [Complete matching audio](https://mylisten.vibestation.cn/library/frankenstein/en/).
+The Frankenstein example is an original discussion of the 1818 three-volume novel and contains major plot events and the ending. Its source links and chapter checks stay outside the narration.

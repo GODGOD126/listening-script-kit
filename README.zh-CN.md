@@ -4,7 +4,7 @@ AI 已经写好了几千字长文，怎样把它整理成可以直接听的节�
 
 [直接打开中文工具箱](https://godgod126.github.io/listening-script-kit/?lang=zh) · [English live toolkit](https://godgod126.github.io/listening-script-kit/)
 
-[下载 v1.2.0 完整 ZIP](https://github.com/GODGOD126/listening-script-kit/releases/download/v1.2.0/listening-script-kit-v1.2.0.zip) · [版本说明](https://github.com/GODGOD126/listening-script-kit/releases/tag/v1.2.0)
+[下载 v1.3.0 完整 ZIP](https://github.com/GODGOD126/listening-script-kit/releases/download/v1.3.0/listening-script-kit-v1.3.0.zip) · [版本说明](https://github.com/GODGOD126/listening-script-kit/releases/tag/v1.3.0)
 先把整个文件夹解压，再打开 `index.html`；直接在压缩包里打开可能缺少脚本。文件包只含这个公开工具箱，不含 App 工程或语音模型。手机上可以直接使用上方在线入口。
 
 下载整个项目，直接打开 `index.html`，选择中文即可使用。**不用注册、不需要密钥、不上传文稿、不调用 AI、不生成语音，也不保存输入。** 所有处理在当前浏览器内完成，无需安装依赖或启动服务器。
@@ -17,7 +17,23 @@ AI 已经写好了几千字长文，怎样把它整理成可以直接听的节�
 
 ## 先用完整示范试一遍
 
-在线与离线工具箱都内置地图、二维码及《弗兰肯斯坦》书籍解读三主题的中英文完整文稿和来源。选择示范后可填入检查区逐字稿、节目标题、朗读正文与参考资料四栏；已有不同文字时先保留，只有明确选择替换才改动这四栏。切换主题或语言本身不会改输入，也不替换提示词区内容。对应声音在外部案例页，工具箱不含声音模型或音频文件。
+在线与离线工具箱都内置地图、二维码及《弗兰肯斯坦》书籍解读三主题的中英文完整文稿和来源。选择示范后可填入检查区逐字稿、节目标题、朗读正文与参考资料四栏；已有不同文字时先保留，只有明确选择替换才改动这四栏。切换主题或语言本身不会改输入，也不替换提示词区内容。对应节目音频页已撤下；产品页仍保留原有四段中文声音示范，与这些文稿不是同一期节目。工具箱不含声音模型或音频文件。
+
+## 给AI使用的听稿技能
+
+[阅读 listening-script 技能](skills/listening-script/SKILL.md) · [查看表格与不确定性的改写示例](skills/listening-script/references/worked-example.md)
+
+这份技能用于把研究报告、文章、读书笔记和AI草稿整理为听稿，保留数字、归属、证据范围和你要求的详细程度。它将来源与正文分开，不往你的节目里强塞产品广告。技能只包含文字指导，不执行脚本、不调用接口、不生成声音，也不访问账号。
+
+可以把 `skills/listening-script` 文件夹复制到你使用的Agent技能目录，或通过[开放技能CLI](https://skills.sh/docs)安装：
+
+```sh
+npx skills add GODGOD126/listening-script-kit --skill listening-script
+```
+
+CLI是另一个工具，会从GitHub下载文件。安装前先阅读技能，按CLI提示选择你的Agent和安装范围；可用 `DISABLE_TELEMETRY=1` 关闭其安装统计。直接使用浏览器工具箱无需安装。
+
+请求示例：“用 listening-script 把这篇研究报告变成中文听稿，保留细节和证据边界，把表格关系讲成完整句子，网址与待核查项另放一份备注。”
 
 ## 为什么不直接删掉网址、表格和引用
 
@@ -29,22 +45,21 @@ AI 已经写好了几千字长文，怎样把它整理成可以直接听的节�
 
 代码及原创示例采用 MIT 许可。第三方链接内容仍按其来源的规定使用。这里没有「自听」App源码、模型或私有资料。
 
-## 一个完整的实际示范
+## 原有声音试听
 
-[旅行者号：完整逐字稿、来源与中英文音频](https://mylisten.vibestation.cn/guides/voyager-listening-case/)。这份 AI 辅助编写的长文已对照 NASA 资料核查，来源保留在正文之外。试听使用「自听」1.1.5 Build83归档模型与原生代码，在独立 Mac mini 工具生成；不是 iPhone 录音，也不是生成速度或真机性能测试。
+[听原有四段中文声音示范](https://mylisten.vibestation.cn/#listen)。这是产品声音展示，与工具箱内的文稿不是同一期节目。原完整节目库和案例页已撤下；地图、二维码与《弗兰肯斯坦》的完整文稿和来源仍内置在工具箱。
 
 本工具箱由「自听」MyListen开发者 Ryan Zhu 提供，AI辅助编写。可以配合其他文字转语音工具使用。
 
 [「自听」](https://mylisten.vibestation.cn/)负责之后的收听环节：将自己的文字在 iPhone 或 iPad 本地变成一期节目，支持锁屏收听、记录进度与续听。声音模型在本地运行，支持导出 M4A。可以下载试用，完整功能通过 App 内购买解锁，**无订阅、无广告**。工具箱的免费 MIT 许可与 App 商业条款是两回事。
 
-[English](README.md) · [产品事实与使用边界](https://mylisten.vibestation.cn/guides/product-facts/)
+[English](README.md) · [自听产品介绍](https://mylisten.vibestation.cn/)
 
 
-[完整双语节目库](https://mylisten.vibestation.cn/library/)另外提供地图投影与二维码两个主题。每期附完整音频、对应文稿、公开来源及可复制提示词。地图页还有纬度与局部面积倍率的交互示意。音频使用归档Build83模型和原生代码，在独立Mac mini工具生成，非iPhone录音。
 
 ## 实现说明
 
 [Unicode字数、原文定位与正文导出的技术说明（英文）](docs/text-review-contracts.md)保留可运行的代码示例、实际核验结果和限制，可独立用于其他文本工具。
 
 
-《弗兰肯斯坦》示范是依据1818年三卷原著编写的原创书籍解读，含重要情节和结局；原著链接和章节核查单独保留。[完整对应声音](https://mylisten.vibestation.cn/library/frankenstein/)。
+《弗兰肯斯坦》示范是依据1818年三卷原著编写的原创书籍解读，含重要情节和结局；原著链接和章节核查单独保留。
