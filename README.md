@@ -40,7 +40,7 @@ Example request: “Use listening-script to turn this research report into a Chi
 
 ## Why references stay separate
 
-[Try a study episode: mean vs median](learning/mean-median/README.md). The pack includes complete Chinese and English narrations, reusable study prompts, separate source notes and checked fictional exercises. It demonstrates learning long texts, not just news or stories. No audio or learning-outcome claim is included.
+[Try a study episode: mean vs median](learning/mean-median/README.md). The pack includes complete Chinese and English narrations, reusable study prompts, separate source notes and checked fictional exercises. A [separate 8m17s Chinese AI-speech demo](https://github.com/GODGOD126/listening-script-kit/releases/tag/zh-audio-demo-20261004) is available as a release attachment. It was generated on Mac, not recorded on iPhone. The toolkit remains text-only; no learning-outcome or real-device performance claim is made.
 
 A source URL is valuable evidence but rarely useful when a voice reads out its punctuation. A table can contain useful information while still needing spoken sentences. This kit flags such patterns and leaves the writing decision to you. It does not remove citations, determine copyright, or certify that a script is safe or accurate.
 
