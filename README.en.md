@@ -2,7 +2,7 @@
 
 Three small, local-only tools for turning an AI-written long text into a script you can actually listen to: build a writing prompt, review patterns that need attention, and export the narration separately from its references.
 
-[Use the live toolkit](https://godgod126.github.io/listening-script-kit/) · [打开中文工具箱](https://godgod126.github.io/listening-script-kit/?lang=zh)
+[Use the live toolkit](https://godgod126.github.io/listening-script-kit/?lang=en) · [打开中文工具箱](https://godgod126.github.io/listening-script-kit/?lang=zh)
 
 [Download the v1.3.0 ZIP](https://github.com/GODGOD126/listening-script-kit/releases/download/v1.3.0/listening-script-kit-v1.3.0.zip) · [Release notes](https://github.com/GODGOD126/listening-script-kit/releases/tag/v1.3.0)
 Extract the whole folder before opening `index.html`; opening a file inside a ZIP may leave the scripts unavailable. The release contains only this public kit, with no app code or voice models. The hosted page is the simplest way to try it on a phone.
