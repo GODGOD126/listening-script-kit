@@ -2,12 +2,13 @@
 
 AI写好了几千字长文，想把它变成自己能听的节目？这里提供免费听稿准备工具、可复制的中文请求，以及完整音频例子。先听一份，再用自己的主题试一遍。
 
-## 先听两个完整中文例子
+## 先听完整中文例子
 
 - [为什么火车改变了我们的时间？](https://godgod126.github.io/listening-script-kit/learning/railway-time/)：约8分05秒，从铁路讲到标准时间制度；附正文、事实表和机构来源。
 - [平均十分钟，为什么没有人等十分钟？](https://godgod126.github.io/listening-script-kit/learning/mean-median/)：约8分17秒，用原创虚构例子讲平均数、中位数和小组比较。
+- [弗兰肯斯坦，究竟是谁的名字？](https://godgod126.github.io/listening-script-kit/learning/frankenstein/)：约6分30秒，依据1818年版作原创中文解读；复用10月2日已制作的音轨，附正文、来源和请求。
 
-两份音频均为AI合成，在Mac端生成，非iPhone录音或设备性能测试；免费收听，不要求购买App。音频与正文可以分别下载，核验范围在各自说明中保留。
+这些音频均为AI合成，在Mac端生成，非iPhone录音或设备性能测试；免费收听，不要求购买App。音频与正文可以分别下载，核验范围在各自说明中保留。
 
 ## 用自己的长文开始
 
@@ -19,7 +20,7 @@ AI写好了几千字长文，想把它变成自己能听的节目？这里提供
 
 [中文详细说明](README.zh-CN.md) · [v1.3.0离线工具箱ZIP](https://github.com/GODGOD126/listening-script-kit/releases/download/v1.3.0/listening-script-kit-v1.3.0.zip) · [版本说明](https://github.com/GODGOD126/listening-script-kit/releases/tag/v1.3.0)
 
-离线ZIP是工具箱1.3.0版本，解压完整文件夹后打开index.html。上面新增的中文请求在当前源码中，两份音频另行提供；ZIP不包含App工程或语音模型。
+离线ZIP是工具箱1.3.0版本，解压完整文件夹后打开index.html。上面新增的中文请求在当前源码中，音频另行提供；ZIP不包含App工程或语音模型。
 
 ## 已经在使用Agent？
 
