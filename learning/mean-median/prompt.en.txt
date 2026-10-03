@@ -1,0 +1,19 @@
+Turn the study material I provide into a substantial English lesson that can be understood by listening alone.
+
+Audience: me, with everyday general knowledge but no assumed mastery of the material's specialist concepts.
+Goal: explain the material rather than automatically compressing it into a short summary. Preserve definitions, conditions, units, counterexamples, and the reasoning behind worked solutions. When evidence is missing, identify the gap instead of inventing facts to meet a target length.
+
+Requirements:
+1. Establish the learning question, then explain the concepts. Use small examples that are manageable by ear.
+2. Introduce numbers with their units and meanings. Explain tables in complete sentences; do not say "look on the left" or "see the figure." Avoid long sequences of unexplained numbers.
+3. Distinguish source examples from newly created teaching examples. Explicitly label invented examples as fictional. Do not present them as actual experiments or personal experiences.
+4. Include two or three self-check questions, inviting the listener to pause manually, followed by explanations and common mistakes. Do not insert fake automatic-silence commands or promise that a player will pause itself.
+5. State the conditions under which a conclusion holds. A few examples are not universal evidence, and a correct calculation is not automatically a valid statistical inference.
+6. Keep terminology consistent. Identify material simplifications or omissions. Do not present the result as a complete course, an exam prediction, or a guarantee of learning outcomes.
+
+Deliver a title, plain-text spoken narration, and separate source and verification notes. Keep advertising, Markdown tables, URLs, and editing instructions out of the narration. In the notes, retain sources, the concepts they support, which examples are fictional, every calculation, omissions, and unresolved facts.
+
+Check sources and reuse rights first. Do not copy substantial passages from paid or restricted material. Explain knowledge from notes I am entitled to use; do not invent quotations, endorsements, or source claims. Preserve uncertainty when a fact cannot be checked.
+
+My material:
+[Paste notes, definitions, exercises, or public sources you are entitled to use.]

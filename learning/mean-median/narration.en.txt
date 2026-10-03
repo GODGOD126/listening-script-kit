@@ -1,0 +1,65 @@
+Why the mean and the median can tell different stories
+
+Imagine listening to a report that says the average waiting time was ten minutes. You might picture most people waiting about ten minutes. But does that sentence really tell you what most people experienced?
+
+Today, we will work through a few small sets of numbers. They will help us distinguish the arithmetic mean from the median, without needing to look at a table. Every situation and every number in these examples is fictional, created for teaching. None is a product test or a real survey.
+
+Start with five people. Their waiting times were two minutes, three minutes, four minutes, five minutes, and thirty-six minutes. Add the five waiting times together, and you get fifty minutes. Divide that total by five people, and the arithmetic mean is ten minutes.
+
+Is that calculation wrong? No. It answers a specific question: if the total waiting time were shared equally among the five people, how much would each person receive? But only one person actually waited longer than ten minutes. The other four waited less than ten minutes. Nobody in this example waited exactly ten minutes.
+
+The mean preserves a relationship between the total and the number of observations. Every waiting time contributes to the calculation. That includes the unusually long wait of thirty-six minutes. The long wait has not been missed by the mean. It has been included, and it pulls the result upward.
+
+Now ask a different question. How long did the person in the middle wait, after the waiting times were put in order?
+
+The ordered times are two, three, four, five, and thirty-six minutes. The third value is four minutes. There are two values before it and two after it. Four minutes is the median.
+
+The mean is ten minutes, and the median is four minutes. Both are correct. They summarize different aspects of the same data. A disagreement between them does not, by itself, prove that someone has falsified the report.
+
+You can pause here and explain the difference in your own words. Why is the mean much higher than the median in this example?
+
+The longest wait is much longer than the other four. It pulls up the mean. The median depends on the middle position in the ordered data. If we change the longest wait from thirty-six to sixty-six minutes, that wait is still last in the ordering. The middle value is still four minutes.
+
+The mean does change. The new total is eighty minutes. Divide by five people, and the new mean is sixteen minutes. So the median stays at four minutes while the mean rises from ten to sixteen minutes.
+
+Does that make the median the best number for every purpose? No. Reporting only a median of four minutes could hide the sixty-six-minute wait. If we need to detect serious delays, that long wait matters in its own right. A small median is no guarantee that everyone had a good experience.
+
+The median is less sensitive to an extreme value in this example. That can make it useful for describing the central position. It does not replace checking the extreme values. The mean's sensitivity to a long wait can also be informative. Before choosing a summary, decide what question you need to answer.
+
+There is another detail. What happens when the number of observations is even, so there is no single value in the middle?
+
+Suppose four people waited two minutes, four minutes, six minutes, and twenty minutes. These values are already ordered. The two middle values are four and six minutes. Using the usual convention, add those middle values and divide by two. The median is five minutes.
+
+Again, nobody in this example actually waited five minutes. A calculated median does not always correspond to one person's observed waiting time.
+
+The mean for these four people is different. Two plus four plus six plus twenty is thirty-two minutes. Divide by four, and the mean is eight minutes. The same set has a mean of eight minutes and a median of five minutes.
+
+To calculate the median, ordering the values is essential. You cannot simply choose the third line in the original record and call it the middle. The middle of a written list and the middle of the values after sorting are different things. Changing the record order does not change the mean, or the median once the values are correctly sorted.
+
+Now imagine a report comparing two groups. It says group A has a mean waiting time of ten minutes and group B has a mean of eight minutes. Can we conclude that every person in group B waited less than every person in group A?
+
+No. A group mean is a summary. It does not reveal all the individual waiting times or establish a person-to-person comparison. The two groups could overlap considerably. If we were comparing the same people before and after a change, and wanted to know whether each person improved, we would need the paired records rather than just two group summaries.
+
+Two medians cannot establish that everyone improved either. A change in the central position is not the same as a change for every member. When a narration moves from a lower median to a claim that everybody is faster, it has added a conclusion that needs more evidence.
+
+Here is another common trap: taking the average of two group averages.
+
+In a fictional example, group A has two people, with a mean waiting time of two minutes. Group B has eight people, with a mean of twelve minutes. If we add the two group means and divide by two, we get seven minutes. Seven minutes is the unweighted mean of the two group means. It is not the mean waiting time of all ten people.
+
+Why not? The groups have different numbers of people. The two people in group A have a total waiting time of four minutes. The eight people in group B have a total waiting time of ninety-six minutes. Together, ten people have a total of one hundred minutes. Divide one hundred by ten, and the overall mean is ten minutes.
+
+Giving the groups equal weight gives the two-person group as much influence as the eight-person group. If the question is about the mean for all ten people, each person's observation should count equally. To combine the group means correctly for that purpose, we need the group sizes or suitable weights.
+
+When groups are the same size, the simple mean of their arithmetic means does recover the overall mean. When their sizes differ, we cannot silently treat them as equal. Group medians are a separate issue: taking a simple average of group medians does not generally recover the overall median. The overall median depends on how all the individual values fit together in order.
+
+So far, we have learned three things. The mean is not necessarily what most people experienced. The median does not describe everyone's situation. And combining means requires keeping track of the number of observations behind each one.
+
+Try a final self-check. Five fictional waiting times, already ordered, are one minute, two minutes, three minutes, four minutes, and forty minutes. You can pause and work out the mean and the median. Which summary is more affected by the forty-minute wait?
+
+The total is fifty minutes. Divide by five, and the mean is ten minutes. The middle value, in the third position, is three minutes. That is the median. The mean is more affected by the forty-minute wait. But if we want to identify severe delays, the forty-minute observation should also be reported. A low median should not conceal it.
+
+When you next listen to a report, ask four questions. What is being measured, and in what units? Is the speaker describing an arithmetic mean or a median? How many observations are behind the summary? And what information about extreme values, group sizes, or excluded observations has been left out?
+
+You do not need to calculate every result immediately. The questions help you distinguish what a summary tells you from what it leaves unknown. Five observations also cannot represent every possible situation. A correct calculation and a justified general conclusion are different achievements.
+
+This episode is an introductory explanation, not a complete statistics course. The same listening structure can be useful for your own study material: establish a question, introduce a small example that can be followed by ear, keep the units and conditions, offer a self-check, and explain the common mistake. Keep source notes and original tables separately. The spoken text can then explain both the result and the reasoning that produced it.

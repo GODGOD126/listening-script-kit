@@ -1,0 +1,22 @@
+Checked: October 4, 2026.
+Source: NIST/SEMATECH e-Handbook of Statistical Methods, section 1.3.5.1, Measures of Location.
+https://www.itl.nist.gov/div898/handbook/eda/section3/eda351.htm
+
+Scope: definitions of arithmetic mean and sample median; the usual median convention for an even number of observations; the different sensitivity of these summaries to extreme values. The appropriate summary depends on the data and the question. The narration does not claim that the median is always superior.
+
+This English narration adapts our original Chinese lesson in narration.zh.txt. It is not a translation or excerpt of the NIST handbook. Situations, wording, self-checks, and numerical examples are original teaching material. No third-party figure or exercise is reproduced. NIST has not tested, recommended, or endorsed this resource or MyListen.
+
+Fictional examples, in minutes:
+A: 2, 3, 4, 5, 36. Sum 50; count 5; arithmetic mean 10; median 4.
+B: 2, 3, 4, 5, 66. Sum 80; count 5; arithmetic mean 16; median 4.
+C: 2, 4, 6, 20. Sum 32; count 4; arithmetic mean 8; median (4 + 6) / 2 = 5.
+Combined groups: 2 people with mean 2, and 8 people with mean 12. Total 2*2 + 8*12 = 100; count 10; overall mean 10. The unweighted mean of the group means is 7 and answers a different question.
+Self-check: 1, 2, 3, 4, 40. Sum 50; count 5; arithmetic mean 10; median 3.
+
+Equal-sized groups' arithmetic means can be simply averaged to recover the overall arithmetic mean. Group medians and sizes alone generally do not determine the overall median without more ordering information.
+
+All data are fictional teaching examples, not product performance, survey findings, customer feedback, or promotion results. No population inference, listening-duration measurement, real-device audio test, or study of learning outcomes is claimed. Coverage excludes weighted medians, alternative quantile conventions, robust estimation beyond this introduction, and formal inference.
+
+"You can pause" means the listener may pause manually. It is not SSML or a command to insert silence, and it does not imply a new learning mode or automatic-pause feature in MyListen.
+
+Created by Ryan Zhu, developer of 「自听」MyListen, with AI assistance. Original narration and prompts use the repository's MIT license. Linked third-party material retains its own rights. No product advertising is included in the narration.
