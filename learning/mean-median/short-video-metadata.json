@@ -1,0 +1,18 @@
+{
+  "title": "平均数不是每个人",
+  "language": "zh-CN",
+  "durationSeconds": 42.63,
+  "width": 720,
+  "height": 1280,
+  "fps": 24,
+  "sha256": "e184d7e7ddad2eeddbb5221024d37043d03a18f6304dd0f09cd6197ef7164274",
+  "bytes": 938877,
+  "syntheticVoice": true,
+  "generationDevice": "Mac",
+  "iphoneRecording": false,
+  "fictionalTeachingData": true,
+  "license": "MIT",
+  "sourceAudio": "mean-median-zh.mp3",
+  "sourceStartSeconds": 44.15,
+  "sourceEndSeconds": 82.28
+}
