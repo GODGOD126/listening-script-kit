@@ -16,6 +16,8 @@ AI写好了几千字长文，想把它变成自己能听的节目？这里提供
 2. [复制一份中文请求](skills/listening-script/references/chinese-starters.md)：已有读书笔记、明确日期的AI资讯、有来源的历史问题。替换资料、篇幅和允许改写范围，再交给你选定的AI工具。
 3. 保存并核对听稿，再使用你自己的文字转语音工具收听。
 
+[AI把表格改成听稿：数字保留了，原稿也未必正确](docs/narration-review-zh.md)记录两次真实改写、完整原文与人工核查。它提供检查方法，不证明哪个提示词更好，也不承诺所有长文保真。
+
 **工具箱不调用AI、不生成声音、不上传文稿、不需要账号或密钥。** 文本处理在当前浏览器内完成；关闭页面会丢失未保存输入。你使用的其他AI与语音工具另按其规则运行。
 
 [中文详细说明](README.zh-CN.md) · [v1.3.1离线工具箱ZIP](https://github.com/GODGOD126/listening-script-kit/releases/download/v1.3.1/listening-script-kit-v1.3.1.zip) · [版本说明](https://github.com/GODGOD126/listening-script-kit/releases/tag/v1.3.1)
