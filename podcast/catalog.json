@@ -6,6 +6,17 @@
   "createdAt": "2026-10-09T03:08:13.583956+08:00",
   "episodes": [
     {
+      "slug": "markdown-notes-zh",
+      "directory": "examples/markdown-notes-zh",
+      "file": "markdown-notes-zh.mp3",
+      "seconds": 134.39,
+      "bytes": 1208071,
+      "title": "双链能跳转，耳朵却不能：Markdown笔记听稿示范",
+      "description": "把表格、代码结果、待核问题和反例改成完整句子。听稿原文、完整请求和核对附录可下载，不编造缺失图片或关联笔记。",
+      "addedToFeedAt": "2026-10-09T04:43:15.688752+08:00",
+      "originalPublishedAt": null
+    },
+    {
       "slug": "calendar-1582",
       "file": "calendar-1582.zh.mp3",
       "seconds": 552.71,
@@ -55,5 +66,6 @@
       "addedToFeedAt": "2026-10-09T03:08:13.583956+08:00",
       "originalPublishedAt": null
     }
-  ]
+  ],
+  "updatedAt": "2026-10-09T04:43:15.688752+08:00"
 }

@@ -5,7 +5,7 @@
     <link>https://godgod126.github.io/listening-script-kit/podcast/</link>
     <description>有来源的中文长文，整理成能连续听的节目。历史、学习与读书；正文和请求可独立复用。Ryan Zhu与AI辅助制作文稿，声音由AI合成，在Mac使用自听归档模型生成，非当前iPhone录音或性能测试。原始来源、文稿和核验范围在单集页面。由「自听」MyListen开发者提供；音频免费收听，不要求购买App。App可免费下载试用，完整功能内购解锁，无订阅、无广告。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 09 Oct 2026 03:08:13 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 04:43:15 +0800</lastBuildDate>
     <itunes:author>Ryan Zhu</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
@@ -17,6 +17,20 @@
       <title>自听知识听稿</title>
       <link>https://godgod126.github.io/listening-script-kit/podcast/</link>
     </image>
+    <item>
+      <title>双链能跳转，耳朵却不能：Markdown笔记听稿示范</title>
+      <link>https://godgod126.github.io/listening-script-kit/examples/markdown-notes-zh/</link>
+      <description>把表格、代码结果、待核问题和反例改成完整句子。听稿原文、完整请求和核对附录可下载，不编造缺失图片或关联笔记。
+
+Ryan Zhu与AI辅助制作文稿，声音由AI合成，在Mac使用自听归档模型生成，非当前iPhone录音或性能测试。原始来源、文稿和核验范围在单集页面。由「自听」MyListen开发者提供；音频免费收听，不要求购买App。App可免费下载试用，完整功能内购解锁，无订阅、无广告。
+
+完整文稿和来源：https://godgod126.github.io/listening-script-kit/examples/markdown-notes-zh/</description>
+      <guid isPermaLink="false">https://godgod126.github.io/listening-script-kit/podcast/episode/markdown-notes-zh</guid>
+      <pubDate>Fri, 09 Oct 2026 04:43:15 +0800</pubDate>
+      <enclosure url="https://godgod126.github.io/listening-script-kit/examples/markdown-notes-zh/markdown-notes-zh.mp3" length="1208071" type="audio/mpeg" />
+      <itunes:duration>134</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>1582年少掉的十天去哪了？</title>
       <link>https://godgod126.github.io/listening-script-kit/learning/calendar-1582/</link>

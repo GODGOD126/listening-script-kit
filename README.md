@@ -16,7 +16,7 @@ AI写好了几千字长文，想把它变成自己能听的节目？这里提供
 
 ## 用播放器连续收听
 
-[自听知识听稿：RSS手动订阅](https://godgod126.github.io/listening-script-kit/podcast/)把上方五期完整中文音频放进一个Feed，约40分钟。已有音轨复用，没有重新录制；免费收听。页面给出Apple播客通过URL关注的方法，尚未进入Apple播客目录，iPhone客户端订阅未实测，不计目录上架或收听效果。
+[自听知识听稿：RSS手动订阅](https://godgod126.github.io/listening-script-kit/podcast/)把六期完整中文音频放进一个Feed，约42分钟，包含Markdown笔记的匹配听稿。已有音轨复用，没有因加入RSS重新录制；免费收听。页面给出Apple播客通过URL关注的方法，尚未进入Apple播客目录，iPhone客户端订阅未实测，不计目录上架或收听效果。
 
 RSS由podcast/catalog.json记录，运行py -3 tools/build-podcast.py可重建；日期表示首次加入本Feed，来源与音频说明在各单集页面。
 
