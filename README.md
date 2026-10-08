@@ -4,6 +4,8 @@ AI写好了几千字长文，想把它变成自己能听的节目？这里提供
 
 ## 先听完整中文例子
 
+- [左连接为什么丢掉一个人？](https://godgod126.github.io/listening-script-kit/learning/sql-left-join/)：约7分51秒，四组SQLite查询讲清ON与WHERE；附实际结果、代码与中文听稿。
+
 - [为什么火车改变了我们的时间？](https://godgod126.github.io/listening-script-kit/learning/railway-time/)：约8分05秒，从铁路讲到标准时间制度；附正文、事实表和机构来源。
 - [平均十分钟，为什么没有人等十分钟？](https://godgod126.github.io/listening-script-kit/learning/mean-median/)：约8分17秒，用原创虚构例子讲平均数、中位数和小组比较。
 - [弗兰肯斯坦，究竟是谁的名字？](https://godgod126.github.io/listening-script-kit/learning/frankenstein/)：约6分30秒，依据1818年版作原创中文解读；复用10月2日已制作的音轨，附正文、来源和请求。

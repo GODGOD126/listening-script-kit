@@ -1,0 +1,68 @@
+{
+  "sqliteVersion": "3.49.1",
+  "scope": "虚构教学数据；本地内存数据库；仅证明这组输入输出，不是性能测试",
+  "results": {
+    "filter_in_where": {
+      "sql": "SELECT u.name, o.id, o.status FROM users u LEFT JOIN orders o ON o.user_id=u.id WHERE o.status='paid' ORDER BY u.id;",
+      "rows": [
+        [
+          "阿青",
+          101,
+          "paid"
+        ]
+      ]
+    },
+    "filter_in_on": {
+      "sql": "SELECT u.name, o.id, o.status FROM users u LEFT JOIN orders o ON o.user_id=u.id AND o.status='paid' ORDER BY u.id;",
+      "rows": [
+        [
+          "阿青",
+          101,
+          "paid"
+        ],
+        [
+          "小林",
+          null,
+          null
+        ],
+        [
+          "小周",
+          null,
+          null
+        ]
+      ]
+    },
+    "or_null_in_where": {
+      "sql": "SELECT u.name, o.id, o.status FROM users u LEFT JOIN orders o ON o.user_id=u.id WHERE o.status='paid' OR o.id IS NULL ORDER BY u.id;",
+      "rows": [
+        [
+          "阿青",
+          101,
+          "paid"
+        ],
+        [
+          "小周",
+          null,
+          null
+        ]
+      ]
+    },
+    "count_paid": {
+      "sql": "SELECT u.name, COUNT(o.id) AS paid_count FROM users u LEFT JOIN orders o ON o.user_id=u.id AND o.status='paid' GROUP BY u.id, u.name ORDER BY u.id;",
+      "rows": [
+        [
+          "阿青",
+          1
+        ],
+        [
+          "小林",
+          0
+        ],
+        [
+          "小周",
+          0
+        ]
+      ]
+    }
+  }
+}

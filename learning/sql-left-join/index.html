@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>左连接为什么丢掉一个人？｜7分51秒中文SQL复习听稿</title>
+<meta name="description" content="离开屏幕也能复习LEFT JOIN的ON与WHERE条件差别。原创中文AI音频，四组SQLite真实查询，完整讲稿、代码及提示词免费可用。">
+<link rel="canonical" href="https://godgod126.github.io/listening-script-kit/learning/sql-left-join/">
+<style>*{box-sizing:border-box}body{margin:0;background:#f7f5ef;color:#242720;font:19px/1.8 system-ui,'Microsoft YaHei',sans-serif}main{max-width:800px;margin:auto;padding:42px 24px}h1{font-size:clamp(32px,6vw,46px);line-height:1.3}h2{font-size:26px}a{color:#276353;text-underline-offset:4px}section{background:#fff;border:1px solid #dce1d4;border-radius:18px;padding:24px;margin:26px 0}audio{width:100%}small,.note{font-size:16px;color:#596158}.links{display:flex;flex-wrap:wrap;gap:12px 22px}details{padding:20px 0;border-top:1px solid #dce1d4}summary{cursor:pointer;font-size:21px;font-weight:650}pre{font:17px/1.8 system-ui,sans-serif;white-space:pre-wrap;overflow-wrap:anywhere}a:focus-visible,summary:focus-visible{outline:3px solid #396e55;outline-offset:4px}footer{border-top:1px solid #dce1d4;margin-top:30px;padding-top:20px}@media(max-width:420px){main{padding:28px 18px}section{padding:18px}body{font-size:18px}}</style></head><body><main>
+<p class="note">完整中文学习音频 · 7分51秒 · 四组真实SQL查询</p>
+<h1>左连接为什么<br>丢掉一个人？</h1>
+<p>阿青付了款，小林有订单却没付款，小周根本没订单。要把三个人都留在名单里，“已付款”究竟放在哪里？</p>
+<p class="note">人物与订单是原创虚构教学数据；四组查询在SQLite 3.49.1实际运行。Ryan Zhu是「自听」MyListen开发者，文稿由AI辅助制作并核查。</p>
+<section aria-label="中文SQL音频播放器"><h2>直接收听完整例子</h2>
+<audio controls preload="none" src="sql-left-join-zh.mp3">浏览器不支持播放时，请下载MP3。</audio>
+<p class="note">AI合成声音。Mac使用归档1.1.5/build83模型生成，非当前1.1.7的iPhone录音或性能测试。无账号、无付费墙；打开播放器会读取GitHub Pages公开音频。</p>
+<p class="links"><a href="sql-left-join-zh.mp3" download>下载完整MP3</a><a href="audio-narration.zh.txt" download>实际朗读稿TXT</a><a href="prompt.zh.txt" download>复用听稿提示词</a></p></section>
+<section><h2>回到电脑上，自己跑一遍</h2><p>WHERE只筛付款：阿青。ON只匹配付款：三人都在。WHERE付款或订单编号为空：阿青和小周，仍丢小林。ON匹配付款再数订单编号：一、零、零。</p>
+<p>听稿用于复习解释；不替代实际写代码，也没有测量学习效果。ON/WHERE说明逻辑语义，不断言物理执行顺序。</p>
+<p class="links"><a href="lesson.md">完整代码与讲解</a><a href="verify-example.py" download>可执行Python验证</a><a href="query-results.json" download>实际查询结果</a></p></section>
+<details><summary>展开完整朗读稿</summary><pre>本期声音由人工智能语音模型合成，文稿由 Ryan Zhu 与人工智能辅助制作。人物、订单和小店均是虚构教学例子，查询结果已在本地数据库核对。本示范在 Mac 上使用归档模型生成，不是当前版本的 iPhone 录音。
+
+今天复习一个很容易写错，也很适合用耳朵想清楚的问题：左连接明明说会保留左边的人，为什么查询结果里，有些人还是不见了？
+
+先把代码放到一边。我们开一家虚构的小店，店里有三位登记过的用户。阿青买了一件商品，而且已经付款。小林也下过订单，但还没有付款。小周注册了账号，还没有下过任何订单。请记住这三种情况：阿青，已经付款；小林，有订单但没付款；小周，没有订单。
+
+现在老板提出一个需求：把所有登记用户都列出来。如果这个人有已付款订单，就把那笔订单放在他的名字旁边；如果没有，订单的位置留空。最终名单应该有三个人。阿青旁边有一笔付款订单，小林旁边空着，小周旁边也空着。小林和小周的实际经历不同，但在“有没有已付款订单”这件事上，两个人都没有。
+
+这时，我们需要把用户名单和订单名单关联起来。在数据库中，用户是一张表，订单是另一张表。订单记录中有用户编号，凭这个编号，我们可以知道订单属于谁。左连接，英文叫LEFT JOIN，可以先理解成一个安排：以左边的用户名单为基础，把右边符合连接条件的订单带过来；如果某个用户没有找到符合条件的订单，仍然保留这个用户，在订单的位置补上缺少值的标记。
+
+这个标记通常叫NULL。它不是零元，不是零号订单，也不是说现实中的每一个信息都已经确定。它表示查询结果的这个位置没有值。在我们的例子里，小周没有订单，所以左连接的结果里，他的订单编号和订单状态会是这个缺少值的标记。
+
+但是，左连接保留人，并不意味着之后所有条件都会保留人。我们来看看第一种写法。连接时，只规定订单的用户编号要和这个人的编号相同。连接结束以后，再用最终筛选条件规定：订单状态必须是已付款。这里的最终筛选条件，代码里叫WHERE。
+
+现在按人走一遍。阿青找到自己的订单，订单状态是已付款，满足最终筛选条件，所以留下。小林也找到自己的订单，但状态是未付款，不符合要求，所以离开。小周在连接时没有找到订单，本来被保留下来了，但他的订单状态是缺少值。缺少值和已付款比较，不能得到一个为真的判断。因此，小周也没有通过最终筛选。
+
+最终只有阿青。左连接在它自己的那一步确实保留过小周，后面的筛选又把他排除了。问题出在我们把“所有登记用户，并附上他们的付款订单”写成了“只保留最终结果中，订单状态为已付款的行”。这两个要求产生的名单不一样。
+
+再看第二种写法。我们把已付款这个要求，放进连接条件里。连接条件在代码中叫ON。这次寻找订单时，同时检查两件事：订单属于这个用户，而且订单已经付款。只有两件事都满足，订单才能被带到用户名单旁边。
+
+阿青有符合要求的订单，于是留下阿青和那笔订单。小林虽然有订单，但它尚未付款，所以不是这次连接想找的订单。左连接没有为小林找到符合条件的记录，于是仍然保留小林，只让订单位置空着。小周根本没有订单，也没有匹配到记录，于是保留小周，订单位置同样空着。最终三个人都在，正好符合老板最初的要求。
+
+到这里，你可以暂时停一停，自己回答一个问题。如果我只是想知道哪些人已经付款，第一种写法有问题吗？在我们这组数据下，没有问题。它确实把已付款者阿青筛了出来。所谓写错，是相对于你要解决的业务问题而言的，并不是说付款状态永远不能放在最终筛选条件里。先说清你要列哪些人，再判断条件应该放在哪里。
+
+还有一个常见补救办法，听起来很合理，却需要小心。有人会说：我就在最后加一条，要么订单已经付款，要么订单编号为空，这样不就把没有订单的人留住了吗？我们沿用第一种连接，只按用户编号来寻找订单，再用这个新的条件筛选。
+
+阿青的订单已经付款，他通过。小周没有订单，订单编号是缺少值，他也通过。但是小林怎么办？小林有一笔未付款订单，所以他的订单编号不是空值，而是一个真实的编号。他既不是已付款，订单编号也不为空，于是还是被排除。最后是阿青和小周，小林仍然不在。
+
+这就说明，最后允许空值，并不一定等同于在连接时只匹配付款订单。小林是我们必须保留的反例。他只有未付款订单，这个状态和没有任何订单，并不相同。写复习笔记时，很容易只记阿青和小周，漏掉小林；一旦漏掉，两个查询看起来好像就能互换了。
+
+再往前走一步。如果老板要在名单上显示每个人的已付款订单数量，我们可以先使用第二种连接，让连接条件只匹配已付款订单，再按用户汇总。在我们的示例里，阿青有一笔，小林零笔，小周零笔。这里应该数实际匹配到的订单编号。SQL里可以用COUNT加订单编号，因为它不会把缺少值的订单编号算进去。
+
+如果你直接数每个人分组里的所有结果行，需要留意：左连接为没有匹配订单的人补出来的那一行，也是一行结果。虽然订单位置都是空的，但用户名还在。这时，数行和数真实订单不是同一回事。小林和小周可以各有一行结果，同时各有零笔付款订单。一个数字说的是结果行，另一个数字说的是订单。
+
+同样，名单的结果行数也不一定就是人数。为了让例子容易听，我们只安排阿青一笔已付款订单。如果阿青后来有两笔已付款订单，那么没有先做汇总的连接结果里，阿青可能出现两行：每一行带来一笔订单。左连接保证未匹配的左边记录可以保留下来，并不保证每个人永远只出现一次。
+
+我们刚才按连接、补空值、最终筛选的顺序来讲，是为了理解查询的逻辑含义。它不是对数据库实际执行计划的逐步描写。数据库可以在不改变结果的前提下使用优化方法。学习时先把语义和结果想清楚，分析性能时再去看具体执行计划，不要把这两件事混起来。
+
+回到电脑前，可以用三位用户的这个小例子做四次查询。第一次，只按用户编号做左连接，最后筛已付款，应该只得到阿青。第二次，把已付款放进连接条件，应该得到三个人。第三次，在第一次的最终筛选中允许订单编号为空，应该得到阿青和小周，小林还是没有出现。第四次，在第二次的基础上，数每个人匹配到的订单编号，应该得到一、零、零。
+
+如果你的结果不同，先核对数据和条件，再看代码。不要急着背一句“左连接的条件只能写在哪里”。更有用的复习问题是：我要保留哪些用户？连接时允许什么订单匹配？匹配不上时补出的空值，后面还会遇到什么筛选？当这三个问题说得清楚，你就能判断名单上的人为什么留下，又为什么离开。
+</pre></details>
+<details><summary>展开实际运行结果与来源</summary><pre>{
+  &quot;sqliteVersion&quot;: &quot;3.49.1&quot;,
+  &quot;scope&quot;: &quot;虚构教学数据；本地内存数据库；仅证明这组输入输出，不是性能测试&quot;,
+  &quot;results&quot;: {
+    &quot;filter_in_where&quot;: {
+      &quot;sql&quot;: &quot;SELECT u.name, o.id, o.status FROM users u LEFT JOIN orders o ON o.user_id=u.id WHERE o.status=&#x27;paid&#x27; ORDER BY u.id;&quot;,
+      &quot;rows&quot;: [
+        [
+          &quot;阿青&quot;,
+          101,
+          &quot;paid&quot;
+        ]
+      ]
+    },
+    &quot;filter_in_on&quot;: {
+      &quot;sql&quot;: &quot;SELECT u.name, o.id, o.status FROM users u LEFT JOIN orders o ON o.user_id=u.id AND o.status=&#x27;paid&#x27; ORDER BY u.id;&quot;,
+      &quot;rows&quot;: [
+        [
+          &quot;阿青&quot;,
+          101,
+          &quot;paid&quot;
+        ],
+        [
+          &quot;小林&quot;,
+          null,
+          null
+        ],
+        [
+          &quot;小周&quot;,
+          null,
+          null
+        ]
+      ]
+    },
+    &quot;or_null_in_where&quot;: {
+      &quot;sql&quot;: &quot;SELECT u.name, o.id, o.status FROM users u LEFT JOIN orders o ON o.user_id=u.id WHERE o.status=&#x27;paid&#x27; OR o.id IS NULL ORDER BY u.id;&quot;,
+      &quot;rows&quot;: [
+        [
+          &quot;阿青&quot;,
+          101,
+          &quot;paid&quot;
+        ],
+        [
+          &quot;小周&quot;,
+          null,
+          null
+        ]
+      ]
+    },
+    &quot;count_paid&quot;: {
+      &quot;sql&quot;: &quot;SELECT u.name, COUNT(o.id) AS paid_count FROM users u LEFT JOIN orders o ON o.user_id=u.id AND o.status=&#x27;paid&#x27; GROUP BY u.id, u.name ORDER BY u.id;&quot;,
+      &quot;rows&quot;: [
+        [
+          &quot;阿青&quot;,
+          1
+        ],
+        [
+          &quot;小林&quot;,
+          0
+        ],
+        [
+          &quot;小周&quot;,
+          0
+        ]
+      ]
+    }
+  }
+}</pre><p>核验日期：2026年10月9日。<a href="https://www.sqlite.org/lang_select.html#whereclause">SQLite官方SELECT文档2.3节</a>说明外连接补NULL与WHERE筛选的关系。例子为重新创作，不暗示SQLite或其作者推荐产品。</p></details>
+<footer><p>讲稿、代码和提示词可独立使用，原创材料采用本仓库MIT许可；第三方资料保留原有权利。音频已核对输入、0跳过、解码和振幅；后续内容核验说明另附。不把文件可播放等同于真人听感评价。</p>
+<p>想把自己的学习长文保存成一期节目？「自听」MyListen在iPhone本地生成自然声音，支持锁屏收听、进度续听和导出M4A。无订阅、无广告；可下载试用，完整功能通过App内购买解锁。</p>
+<p class="links"><a href="https://apps.apple.com/cn/app/id6790382144">查看中国区App Store详情</a><a href="../../?lang=zh">长文节目工具箱</a><a href="https://github.com/GODGOD126/listening-script-kit/tree/main/learning/sql-left-join">查看源文件</a></p></footer>
+</main></body></html>
