@@ -14,6 +14,12 @@ AI写好了几千字长文，想把它变成自己能听的节目？这里提供
 
 这些音频均为AI合成，在Mac端生成，非iPhone录音或设备性能测试；免费收听，不要求购买App。音频与正文可以分别下载，核验范围在各自说明中保留。
 
+## 用播放器连续收听
+
+[自听知识听稿：RSS手动订阅](https://godgod126.github.io/listening-script-kit/podcast/)把上方五期完整中文音频放进一个Feed，约40分钟。已有音轨复用，没有重新录制；免费收听。页面给出Apple播客通过URL关注的方法，尚未进入Apple播客目录，iPhone客户端订阅未实测，不计目录上架或收听效果。
+
+RSS由podcast/catalog.json记录，运行py -3 tools/build-podcast.py可重建；日期表示首次加入本Feed，来源与音频说明在各单集页面。
+
 ## 用自己的长文开始
 
 1. [打开中文工具箱](https://godgod126.github.io/listening-script-kit/?lang=zh)：生成写作提示词、检查影响收听的文本格式、把正文和参考资料分开导出。

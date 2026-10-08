@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "title": "自听知识听稿",
+  "language": "zh-CN",
+  "baseUrl": "https://godgod126.github.io/listening-script-kit/",
+  "createdAt": "2026-10-09T03:08:13.583956+08:00",
+  "episodes": [
+    {
+      "slug": "calendar-1582",
+      "file": "calendar-1582.zh.mp3",
+      "seconds": 552.71,
+      "bytes": 4938743,
+      "title": "1582年少掉的十天去哪了？",
+      "description": "生活继续，日期标签改变；解释一次纠偏和长期闰年规则。依据天文台公开资料，不把某地改历套到全世界。",
+      "addedToFeedAt": "2026-10-09T03:08:13.583956+08:00",
+      "originalPublishedAt": null
+    },
+    {
+      "slug": "sql-left-join",
+      "file": "sql-left-join-zh.mp3",
+      "seconds": 470.94,
+      "bytes": 4227295,
+      "title": "左连接为什么丢掉一个人？",
+      "description": "用四组实际运行的SQLite查询，讲清LEFT JOIN条件放ON与WHERE的差别。代码与结果在单集页面可核对。",
+      "addedToFeedAt": "2026-10-09T03:08:13.583956+08:00",
+      "originalPublishedAt": null
+    },
+    {
+      "slug": "railway-time",
+      "file": "railway-time-zh.mp3",
+      "seconds": 484.63,
+      "bytes": 4362801,
+      "title": "为什么火车改变了我们的时间？",
+      "description": "从地方时间到铁路时刻表，解释共同时间制度的需要。完整文稿和机构来源在单集页面。",
+      "addedToFeedAt": "2026-10-09T03:08:13.583956+08:00",
+      "originalPublishedAt": null
+    },
+    {
+      "slug": "mean-median",
+      "file": "mean-median-zh.mp3",
+      "seconds": 497.31,
+      "bytes": 4463467,
+      "title": "平均十分钟，为什么没有人等十分钟？",
+      "description": "用1、2、3、4、40分钟这一组教学虚构数据，讲清平均数与中位数。例子不是实际调查。",
+      "addedToFeedAt": "2026-10-09T03:08:13.583956+08:00",
+      "originalPublishedAt": null
+    },
+    {
+      "slug": "frankenstein",
+      "file": "frankenstein-zh.mp3",
+      "seconds": 389.88,
+      "bytes": 3506541,
+      "title": "弗兰肯斯坦，究竟是谁的名字？",
+      "description": "依据1818年版原著作中文解读，区分人物的打算和叙述者真正见证的结局。复用既有音轨。",
+      "addedToFeedAt": "2026-10-09T03:08:13.583956+08:00",
+      "originalPublishedAt": null
+    }
+  ]
+}
