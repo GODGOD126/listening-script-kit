@@ -1,0 +1,28 @@
+{
+  "skippedDateLabels": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "labelDifference": 11,
+  "skippedLabelCount": 10,
+  "annualApproximateDriftDays": 0.0078,
+  "approximateDriftSeconds": 673.92,
+  "leapYearsPer400": 97,
+  "averageGregorianYearDays": 365.2425,
+  "examples": {
+    "1600": true,
+    "1900": false,
+    "2000": true,
+    "2024": true,
+    "2100": false
+  },
+  "scope": "Independent arithmetic under stated rules; not proof of any jurisdiction historical adoption or human impact"
+}

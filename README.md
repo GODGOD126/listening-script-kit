@@ -4,6 +4,8 @@ AI写好了几千字长文，想把它变成自己能听的节目？这里提供
 
 ## 先听完整中文例子
 
+- [1582年少掉的十天去哪了？](https://godgod126.github.io/listening-script-kit/learning/calendar-1582/)：约9分13秒，讲清历法标签、闰年规则与地区差异；附天文台来源、计算验证和完整听稿。
+
 - [左连接为什么丢掉一个人？](https://godgod126.github.io/listening-script-kit/learning/sql-left-join/)：约7分51秒，四组SQLite查询讲清ON与WHERE；附实际结果、代码与中文听稿。
 
 - [为什么火车改变了我们的时间？](https://godgod126.github.io/listening-script-kit/learning/railway-time/)：约8分05秒，从铁路讲到标准时间制度；附正文、事实表和机构来源。

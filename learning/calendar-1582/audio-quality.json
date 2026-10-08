@@ -1,0 +1,18 @@
+{
+  "sourceSeconds": 552.71,
+  "generationSeconds": 221.0972243747674,
+  "sourcePeak": 1.0823564529418945,
+  "fixedGain": 0.7391280366329995,
+  "mp3Peak": 0.7992855310440063,
+  "finite": true,
+  "skippedChunks": 0,
+  "chunks": 61,
+  "voice": "hojo.zh.demo1",
+  "inputFileSha256": "032f5c5034c5bc929334b3ae2a8b18481cfff4504c8c03c6907518dedb3a3d6d",
+  "logicalInputSha256": "14099b147671db96f7d62c67948efa927072992558316f7cfb6b3b7269732ee0",
+  "generatedInputSha256": "032f5c5034c5bc929334b3ae2a8b18481cfff4504c8c03c6907518dedb3a3d6d",
+  "mp3Sha256": "3b226b443d64ebc343196d8c95a0549e7d4a6f47a0ad5323322bb87dedb056e2",
+  "mp3Bytes": 4938743,
+  "editing": "No cuts or music; fixed amplitude reduction and MP3 encoding only",
+  "scope": "Mac existing native runner, archived Build83 model; not iPhone recording, human listening assessment or proof of learning benefit"
+}
