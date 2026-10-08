@@ -1,0 +1,28 @@
+核对附录｜Markdown学习笔记转听稿示范
+
+这是同一份原创SQL教学数据的两种表达，不是新用户案例或新的模型性能测试。
+
+原稿→正文对应：
+- 阿青：101号已付款订单。WHERE与ON两种名单均保留；听稿保留付款条件。
+- 小林：102号未付款订单。WHERE已付款会排除；ON只匹配付款后仍保留名字，订单字段NULL。
+- 小周：无订单。WHERE已付款会排除；ON只匹配付款后仍保留。
+- WHERE付款或订单编号为空：实际阿青、小周，仍漏小林。听稿没有把“未付款”混同“无订单”。
+- 逻辑语义不等于物理执行顺序：正文保留。
+- 所有条件放ON：原稿没有这个结论，正文明确不推广为通用口诀。
+
+暂不展开：
+- [[SQL连接#外连接|左连接]]只是当前文件的双链引用，没有提供关联笔记全文；正文使用已给事实，不补写该笔记。
+- ![[查询结果截图.png]]没有提供图片；正文不根据文件名编描述。
+- status: 待核对是原稿状态。当前SQL四组结果已核查，其余未提供的关联材料未核；不把整份资料说成全部完成。
+- 未勾选的索引执行计划任务仍未完成；听稿明确留作后续，不伪造执行计划。
+- 原始代码与链接保存在raw-note.md中，不混入连续朗读正文。
+
+实际SQLite查询：https://godgod126.github.io/listening-script-kit/learning/sql-left-join/query-results.json
+完整代码与执行：https://godgod126.github.io/listening-script-kit/learning/sql-left-join/lesson.md
+
+格式来源（2026-10-09回读）：
+Obsidian官方中文扩展语法：https://obsidian.md/zh/help/obsidian-flavored-markdown
+Obsidian属性：https://obsidian.md/zh/help/properties
+SQLite逻辑筛选说明：https://www.sqlite.org/lang_select.html#whereclause
+
+局限：这份示范人工核对文本语义，没有对不同AI提示词做随机对照，没有测量学习效果；新增约两分钟文字版尚未生成对应音轨。SQL完整7分51秒音轨是Mac历史归档模型生成，不是当前iPhone录音。

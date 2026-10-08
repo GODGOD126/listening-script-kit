@@ -47,3 +47,7 @@ AI写好了几千字长文，想把它变成自己能听的节目？这里提供
 工具无依赖，已有Node时运行npm test检查文本、Unicode、导出和原文保护。核心代码在lib/，单文件示例在examples/，完整听稿与来源在learning/；[技术说明](docs/text-review-contracts.md)保留实现边界。
 
 [English documentation](README.en.md) · [完整中文使用说明](README.zh-CN.md)
+
+## Markdown笔记转听稿的完整示范
+
+[双链能跳转，耳朵却不能](https://godgod126.github.io/listening-script-kit/examples/markdown-notes-zh/)：原始笔记、中文听稿、提示词和逐项核对附录。表格讲完整，未提供的图片和链接笔记不补造，未完成任务仍标明未完成。文字示范未生成对应音轨。

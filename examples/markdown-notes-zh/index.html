@@ -1,0 +1,81 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>双链能跳转，耳朵却不能｜Markdown笔记转中文听稿示范</title><meta name="description" content="原创Markdown学习笔记、完整中文听稿、提示词与逐项核对附录。看清双链、表格和未完成任务怎样进入听稿，不编造图片或其他笔记。"><link rel="canonical" href="https://godgod126.github.io/listening-script-kit/examples/markdown-notes-zh/"><style>*{box-sizing:border-box}body{margin:0;background:#faf8f1;color:#243128;font:19px/1.85 system-ui,'Microsoft YaHei',sans-serif}main{max-width:840px;margin:auto;padding:38px 24px}h1{font-size:clamp(32px,5vw,46px);line-height:1.3}h2{font-size:26px}section{background:#fff;border:1px solid #d8ded3;border-radius:18px;padding:24px;margin:26px 0}a{color:#236251;text-underline-offset:4px}.note{font-size:16px;color:#59625a}.links{display:flex;flex-wrap:wrap;gap:12px 22px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:17px/1.9 system-ui,sans-serif}summary{font-weight:650;font-size:21px;cursor:pointer}details{border-top:1px solid #d8ded3;padding:20px 0}a:focus-visible,summary:focus-visible{outline:3px solid #426e54;outline-offset:4px}footer{margin-top:32px;border-top:1px solid #d8ded3;padding-top:20px}@media(max-width:420px){main{padding:24px 18px}section{padding:18px}}</style></head><body><main><p class="note">中文笔记 → 离屏听稿 · 原稿与核对说明完整保留</p><h1>双链能跳转，<br>耳朵却不能</h1><p>笔记写着“如上表所示”，耳朵没法往上翻。不是删掉所有符号，而是把对象、条件与结果重新放进句子。</p><p class="note">Ryan Zhu，「自听」MyListen开发者，AI辅助整理。人物和订单均为原创虚构教学数据；沿用已实际运行的SQLite结果，不是产品测试或用户案例。</p>
+<section><h2>一份示范，四个可带走的文件</h2><p>原稿里包含表格、双链、图片引用和未完成任务。图片与关联笔记没有提供，听稿不能凭文件名补内容。</p><p class="links"><a href="raw-note.md" download>原始Markdown笔记</a><a href="narration.zh.txt" download>完整中文听稿TXT</a><a href="prompt.zh.txt" download>可复用整理要求</a><a href="review.zh.txt" download>逐项核对附录</a></p><p class="note">这些文件免费公开，无需账号或购买App，可用于任何合适的朗读工具。新增听稿是文字示范，未生成匹配音轨。</p></section>
+<section><h2>这一行为什么不能直接念？</h2><p>阿青有付款订单，小林只有未付款订单，小周没有订单。不同条件决定留下的是一个人、两个人，还是三个人。听稿每次说清名字和订单状态，不能只说“第二列”和“第三行”。</p><p>图没提供就不猜图；链接笔记没提供就不编笔记。未完成任务仍未完成，否定和例外仍要留在正文中。</p><p class="links"><a href="../../learning/sql-left-join/">已有完整SQL音频与真实代码</a><a href="guide.zh.md">阅读全文与制作步骤</a></p><p class="note">SQL音频约7分51秒，独立Mac工具使用归档1.1.5/build83模型生成，非当前版本iPhone录音；它对应完整SQL稿，不对应下方精简笔记稿。</p></section>
+<details><summary>展开原始笔记</summary><pre>---
+title: 左连接复习
+status: 待核对
+---
+
+# 左连接复习：所有用户都要留下
+
+&gt; 本笔记为原创虚构教学材料。SQLite结果已实际运行；不是用户数据或产品性能测试。
+
+复习对象：[[SQL连接#外连接|左连接]]。相关：![[查询结果截图.png]]
+
+| 用户 | 订单情况 | 条件在WHERE后的名单 | 条件在ON后的名单 |
+| --- | --- | --- | --- |
+| 阿青 | 101号，已付款 | 保留 | 保留，带101号 |
+| 小林 | 102号，未付款 | 不保留 | 保留，订单字段NULL |
+| 小周 | 没有订单 | 不保留 | 保留，订单字段NULL |
+
+“已付款”放WHERE：最后筛名单。放ON：决定哪些订单能匹配。这里说的是逻辑语义，不是物理执行顺序。
+
+- [x] WHERE版实际只留下阿青。
+- [x] ON版实际留下三人。
+- [x] WHERE付款或订单编号为空：阿青、小周，仍然漏小林。
+- [ ] 以后再补另一份笔记里的索引执行计划；当前没有提供那份内容。
+
+```sql
+SELECT u.name, o.id, o.status
+FROM users u LEFT JOIN orders o ON o.user_id=u.id
+WHERE o.status=&#x27;paid&#x27;
+ORDER BY u.id;
+```
+
+图中没有新增证据，本示例只给出图片引用文字，不提供图片。不能根据文件名猜内容。
+
+[实际查询与结果](https://godgod126.github.io/listening-script-kit/learning/sql-left-join/)
+[SQLite官方说明](https://www.sqlite.org/lang_select.html#whereclause)
+</pre></details><details open><summary>展开完整中文听稿</summary><pre>本期是原创虚构的SQL复习例子，结果已在SQLite实际运行核对。不是用户数据或产品性能测试。
+
+先记住这份名单里有三个人。阿青有一笔已经付款的订单，小林有一笔尚未付款的订单，小周没有任何订单。现在我们希望留下所有用户，只在名字旁边放符合付款条件的订单。
+
+这里有两种写法。第一种先按用户编号连接订单，然后在最后的筛选条件中要求订单已经付款。结果只有阿青留下。小林的订单没有付款，没有通过条件。小周没有匹配订单，补出的订单状态为空，也没有通过最后的条件。
+
+第二种把“已经付款”写进连接条件，先说明什么样的订单可以匹配。阿青匹配到已付款订单，留下名字和那笔订单。小林虽然有订单，可这笔订单没有付款，所以没有匹配到符合条件的记录。左连接仍然留下小林的名字，把订单位置空着。小周根本没有订单，也留下名字和空的订单位置。这样，三个用户都在名单上。
+
+还有一个容易混淆的改法：在最后筛选时，允许已经付款，或者订单编号为空。它会留下阿青和小周，却仍然漏掉小林。因为小林有一笔未付款订单，订单编号并不为空。允许空编号，不能在这个例子里替代“连接时只找付款订单”。
+
+这里解释的是查询的逻辑语义，不是数据库实际按什么顺序执行。也不能把结论背成“所有条件都应该放在连接条件里”。如果业务本来就是只要付款用户，那么最后筛选已付款可以符合那个目标。
+
+原笔记还有一项没有完成的任务，要补充索引的执行计划。这份材料没有提供执行计划，因此这期只讲已经核对的名单变化，不猜另一篇笔记或图片里的内容。代码、实际结果和原始说明保留在核对附录，回到屏幕前可以再检查。
+</pre></details><details><summary>展开逐项核对与待核问题</summary><pre>核对附录｜Markdown学习笔记转听稿示范
+
+这是同一份原创SQL教学数据的两种表达，不是新用户案例或新的模型性能测试。
+
+原稿→正文对应：
+- 阿青：101号已付款订单。WHERE与ON两种名单均保留；听稿保留付款条件。
+- 小林：102号未付款订单。WHERE已付款会排除；ON只匹配付款后仍保留名字，订单字段NULL。
+- 小周：无订单。WHERE已付款会排除；ON只匹配付款后仍保留。
+- WHERE付款或订单编号为空：实际阿青、小周，仍漏小林。听稿没有把“未付款”混同“无订单”。
+- 逻辑语义不等于物理执行顺序：正文保留。
+- 所有条件放ON：原稿没有这个结论，正文明确不推广为通用口诀。
+
+暂不展开：
+- [[SQL连接#外连接|左连接]]只是当前文件的双链引用，没有提供关联笔记全文；正文使用已给事实，不补写该笔记。
+- ![[查询结果截图.png]]没有提供图片；正文不根据文件名编描述。
+- status: 待核对是原稿状态。当前SQL四组结果已核查，其余未提供的关联材料未核；不把整份资料说成全部完成。
+- 未勾选的索引执行计划任务仍未完成；听稿明确留作后续，不伪造执行计划。
+- 原始代码与链接保存在raw-note.md中，不混入连续朗读正文。
+
+实际SQLite查询：https://godgod126.github.io/listening-script-kit/learning/sql-left-join/query-results.json
+完整代码与执行：https://godgod126.github.io/listening-script-kit/learning/sql-left-join/lesson.md
+
+格式来源（2026-10-09回读）：
+Obsidian官方中文扩展语法：https://obsidian.md/zh/help/obsidian-flavored-markdown
+Obsidian属性：https://obsidian.md/zh/help/properties
+SQLite逻辑筛选说明：https://www.sqlite.org/lang_select.html#whereclause
+
+局限：这份示范人工核对文本语义，没有对不同AI提示词做随机对照，没有测量学习效果；新增约两分钟文字版尚未生成对应音轨。SQL完整7分51秒音轨是Mac历史归档模型生成，不是当前iPhone录音。
+</pre></details>
+<section><h2>把自己的笔记留给散步时听</h2><p>临时听当前笔记，系统朗读或笔记插件可能已够用。想在iPhone上把自己的长文保存成节目、锁屏收听、下次续听，可以试试「自听」MyListen。</p><p>iPhone本地生成自然声音，无订阅、无广告。可免费下载试用，完整功能通过App内购买解锁。它负责朗读你提供的正文，不展开整个知识库，也不替你核查AI写作的事实。</p><p><a href="https://apps.apple.com/cn/app/id6790382144">查看中国区App Store详情</a></p></section><footer><p class="note">格式参考：<a href="https://obsidian.md/zh/help/obsidian-flavored-markdown">Obsidian官方中文语法</a>、<a href="https://obsidian.md/zh/help/properties">笔记属性</a>。第三方资料不代表推荐或合作；原创示范采用本仓库MIT许可。没有测量学习效果，也没有做提示词优劣对照实验。</p><p><a href="../../?lang=zh">返回中文听稿资源</a> · <a href="https://github.com/GODGOD126/listening-script-kit/tree/main/examples/markdown-notes-zh">查看源文件</a></p></footer></main></body></html>
