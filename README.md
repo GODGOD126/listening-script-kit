@@ -58,4 +58,4 @@ RSS由podcast/catalog.json记录，运行py -3 tools/build-podcast.py可重建�
 
 ## Markdown笔记转听稿的完整示范
 
-[双链能跳转，耳朵却不能](https://godgod126.github.io/listening-script-kit/examples/markdown-notes-zh/)：原始笔记、中文听稿、提示词和逐项核对附录。表格讲完整，未提供的图片和链接笔记不补造，未完成任务仍标明未完成。文字示范未生成对应音轨。
+[双链能跳转，耳朵却不能](https://godgod126.github.io/listening-script-kit/examples/markdown-notes-zh/)：原始笔记、中文听稿、提示词和逐项核对附录。表格讲完整，未提供的图片和链接笔记不补造，未完成任务仍标明未完成。附2分14秒完整匹配音频，Mac归档模型AI合成，非当前iPhone录音。

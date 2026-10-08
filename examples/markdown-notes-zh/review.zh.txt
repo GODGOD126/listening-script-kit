@@ -25,4 +25,4 @@ Obsidian官方中文扩展语法：https://obsidian.md/zh/help/obsidian-flavored
 Obsidian属性：https://obsidian.md/zh/help/properties
 SQLite逻辑筛选说明：https://www.sqlite.org/lang_select.html#whereclause
 
-局限：这份示范人工核对文本语义，没有对不同AI提示词做随机对照，没有测量学习效果；新增约两分钟文字版尚未生成对应音轨。SQL完整7分51秒音轨是Mac历史归档模型生成，不是当前iPhone录音。
+局限：这份示范人工核对文本语义，没有对不同AI提示词做随机对照，没有测量学习效果；2026年10月9日补充2分14秒完整匹配音轨，已检查15块无跳过、文件幅度及自动转写；自动转写不能替代人耳听感判断。SQL完整7分51秒音轨是Mac历史归档模型生成，不是当前iPhone录音。

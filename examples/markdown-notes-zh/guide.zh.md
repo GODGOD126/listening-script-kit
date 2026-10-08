@@ -57,7 +57,7 @@ Obsidian支持普通Markdown，也有内部链接、嵌入、任务列表、标�
 
 它负责把已经准备好的正文变成音频，不负责帮你展开知识库、核查事实或替代实际写代码。你用在线AI整理笔记、再用本地模型生成声音，是两个独立步骤。
 
-本次原稿、听稿和完整提示词可独立使用，不需要购买App。SQL完整音频约7分51秒，由独立Mac工具使用历史归档模型生成，不是当前版本的iPhone录音；新增Markdown示范文本不冒称已有对应音轨。
+本次原稿、听稿和完整提示词可独立使用，不需要购买App。SQL完整音频约7分51秒，由独立Mac工具使用历史归档模型生成，不是当前版本的iPhone录音；2026年10月9日补充2分14秒匹配Markdown听稿的完整音轨，同样使用Mac归档模型生成。
 
 示例下载入口：https://godgod126.github.io/listening-script-kit/examples/markdown-notes-zh/
 中国区App Store：https://apps.apple.com/cn/app/id6790382144
