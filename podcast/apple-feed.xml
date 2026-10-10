@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <title>自听知识听稿</title>
+    <link>https://godgod126.github.io/listening-script-kit/podcast/</link>
+    <description>给普通中文听众的三期完整知识节目：日历怎样改变日期，火车为何改变时间，以及平均数为何不同于典型经历。历史与生活科普，可在通勤、散步时收听。Ryan Zhu与AI辅助制作文稿，声音由AI合成，原始来源、文稿和核验范围在各单集页面。音频在Mac使用自听归档模型生成，非当前iPhone录音或性能测试。由「自听」MyListen开发者提供；节目免费收听，不要求购买App。App可免费下载试用，完整功能内购解锁，无订阅、无广告。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 09 Oct 2026 04:43:15 +0800</lastBuildDate>
+    <itunes:author>Ryan Zhu</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <itunes:image href="https://godgod126.github.io/listening-script-kit/podcast/apple-cover-v1.png" />
+    <itunes:category text="Education" />
+    <atom:link href="https://godgod126.github.io/listening-script-kit/podcast/apple-feed.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <url>https://godgod126.github.io/listening-script-kit/podcast/apple-cover-v1.png</url>
+      <title>自听知识听稿</title>
+      <link>https://godgod126.github.io/listening-script-kit/podcast/</link>
+    </image>
+    <item>
+      <title>1582年少掉的十天去哪了？</title>
+      <link>https://godgod126.github.io/listening-script-kit/learning/calendar-1582/</link>
+      <description>生活继续，日期标签改变；解释一次纠偏和长期闰年规则。依据天文台公开资料，不把某地改历套到全世界。
+
+Ryan Zhu与AI辅助制作文稿，声音由AI合成，在Mac使用自听归档模型生成，非当前iPhone录音或性能测试。原始来源、文稿和核验范围在单集页面。由「自听」MyListen开发者提供；音频免费收听，不要求购买App。App可免费下载试用，完整功能内购解锁，无订阅、无广告。
+
+完整文稿和来源：https://godgod126.github.io/listening-script-kit/learning/calendar-1582/</description>
+      <guid isPermaLink="false">https://godgod126.github.io/listening-script-kit/podcast/episode/calendar-1582</guid>
+      <pubDate>Fri, 09 Oct 2026 03:08:13 +0800</pubDate>
+      <enclosure url="https://godgod126.github.io/listening-script-kit/learning/calendar-1582/calendar-1582.zh.mp3" length="4938743" type="audio/mpeg" />
+      <itunes:duration>553</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>为什么火车改变了我们的时间？</title>
+      <link>https://godgod126.github.io/listening-script-kit/learning/railway-time/</link>
+      <description>从地方时间到铁路时刻表，解释共同时间制度的需要。完整文稿和机构来源在单集页面。
+
+Ryan Zhu与AI辅助制作文稿，声音由AI合成，在Mac使用自听归档模型生成，非当前iPhone录音或性能测试。原始来源、文稿和核验范围在单集页面。由「自听」MyListen开发者提供；音频免费收听，不要求购买App。App可免费下载试用，完整功能内购解锁，无订阅、无广告。
+
+完整文稿和来源：https://godgod126.github.io/listening-script-kit/learning/railway-time/</description>
+      <guid isPermaLink="false">https://godgod126.github.io/listening-script-kit/podcast/episode/railway-time</guid>
+      <pubDate>Fri, 09 Oct 2026 03:08:13 +0800</pubDate>
+      <enclosure url="https://godgod126.github.io/listening-script-kit/learning/railway-time/railway-time-zh.mp3" length="4362801" type="audio/mpeg" />
+      <itunes:duration>485</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>平均十分钟，为什么没有人等十分钟？</title>
+      <link>https://godgod126.github.io/listening-script-kit/learning/mean-median/</link>
+      <description>用1、2、3、4、40分钟这一组教学虚构数据，讲清平均数与中位数。例子不是实际调查。
+
+Ryan Zhu与AI辅助制作文稿，声音由AI合成，在Mac使用自听归档模型生成，非当前iPhone录音或性能测试。原始来源、文稿和核验范围在单集页面。由「自听」MyListen开发者提供；音频免费收听，不要求购买App。App可免费下载试用，完整功能内购解锁，无订阅、无广告。
+
+完整文稿和来源：https://godgod126.github.io/listening-script-kit/learning/mean-median/</description>
+      <guid isPermaLink="false">https://godgod126.github.io/listening-script-kit/podcast/episode/mean-median</guid>
+      <pubDate>Fri, 09 Oct 2026 03:08:13 +0800</pubDate>
+      <enclosure url="https://godgod126.github.io/listening-script-kit/learning/mean-median/mean-median-zh.mp3" length="4463467" type="audio/mpeg" />
+      <itunes:duration>497</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>

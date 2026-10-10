@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3000" height="3000" viewBox="0 0 3000 3000">
+<rect width="3000" height="3000" fill="#FAF4E8"/>
+<rect x="200" y="200" width="2600" height="2600" rx="170" fill="#F3E6CF"/>
+<g fill="#7C4526" font-family="Microsoft YaHei,微软雅黑,sans-serif" text-anchor="middle">
+<text x="1500" y="1110" font-size="690" font-weight="700">自听</text>
+<text x="1500" y="1550" font-size="255" font-weight="600" letter-spacing="22">知识听稿</text>
+<text x="1500" y="2520" font-size="110" letter-spacing="12">历史 · 生活 · 科普</text>
+</g>
+<g fill="none" stroke="#B77444" stroke-width="55" stroke-linecap="round">
+<path d="M700 1940v200 M900 1860v360 M1100 1810v460 M1300 1910v260 M1500 1780v520 M1700 1910v260 M1900 1810v460 M2100 1860v360 M2300 1940v200"/>
+</g>
+</svg>
